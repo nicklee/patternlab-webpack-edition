@@ -1,0 +1,22 @@
+.select {
+
+    &__container {
+        position: relative;
+    }
+
+    &__icon {
+        display: block !important; // Ensure this doesn't show in wagtail admin, but does on public
+        position: absolute;
+        width: ($grid);
+        height: ($grid);
+        right: ($grid / 2);
+        top: calc(50% - (#{$grid} / 2));
+        fill: $color--black;
+
+        .newsletter__form & {
+            fill: $color--white;
+        }
+
+    }
+
+}

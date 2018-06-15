@@ -1,0 +1,38 @@
+.secondary-nav-item {
+    $root: &;
+
+    &__link {
+        @include font-size(s);
+        display: block;
+        padding: ($grid / 4) 0;
+        border-bottom: 1px solid $color--border-light;
+        text-decoration: none;
+        color: $color--black;
+
+        &:hover {
+            color: $color--primary;
+        }
+
+        &.active {
+            background-color: $color--primary;
+            color: $color--white;
+            cursor: default;
+
+            &:hover {
+                background-color: $color--primary;
+                color: $color--white;
+            }
+
+        }
+
+    }
+
+    &:last-child {
+
+        #{$root}__link {
+            border-bottom: 0;
+        }
+
+    }
+
+}

@@ -1,0 +1,39 @@
+.image-full {
+    @include gutter(0.5, 0, 1, 0);
+    position: relative;
+    z-index: 4;
+
+    .page__primary-content & {
+
+        @include media-query(tablet) {
+            margin: 0 (-$grid);
+        }
+
+        @include media-query(desktop) {
+            margin: 0 (-$grid * 6);
+        }
+
+    }
+
+    &__item {
+        width: 100%;
+        height: auto;
+    }
+
+    // Mask share items
+    &::before {
+
+        @include media-query(tablet) {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -($grid * 5);
+            left: -($grid * 5);
+            height: 120%;
+            width: ($grid * 10);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+        }
+
+    }
+
+}

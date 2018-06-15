@@ -1,0 +1,149 @@
+.listing {
+    $root: &;
+
+    &--related {
+        @include gutter(1.5, 0, 1.5, 0);
+        background-color: $color--warm-grey4;
+    }
+
+    &--latest-feed {
+        @include gutter(2, 0, 2, 0);
+    }
+
+    &--team {
+        @include aligner;
+
+        .listing-loader {
+            @include aligner;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &--loader {
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    &__no-results {
+        @include gutter(1.5, 0, 1.5, 0);
+    }
+
+    .browser & {
+        margin-bottom: 0;
+
+        #{$root}__container {
+            flex-direction: column;
+
+            @include media-query(tablet) {
+                flex-direction: row;
+            }
+        }
+
+    }
+
+    .filtered-list & {
+        @include gutter(0.5, 1, 0.5, 1);
+
+        @include media-query(tablet) {
+            @include gutter(0.5, 0.5, 0.5, 0.5);
+        }
+
+    }
+
+    .search-results & {
+        @include gutter(0, 0, 0, 0);
+        margin: 0 auto;
+        min-height: ($grid * 10);
+        overflow: hidden;
+
+        #{$root}__container {
+            @include gutter(0, 0, 1, 0);
+            justify-content: center;
+        }
+
+        &--team {
+
+            #{$root}__container {
+                justify-content: flex-start;
+            }
+
+        }
+
+    }
+
+
+    .listing--related-carousel & {
+
+        #{$root}__container {
+            @include gutter(0, 2, 0, 2);
+
+            @include media-query(wide) {
+                @include gutter(0, 0, 0, 0, true);
+            }
+
+        }
+
+    }
+}
+
+
+// Animation
+.js-slide-in {
+    opacity: 0;
+
+    .template__about-page & {
+        opacity: 1;
+
+        @include media-query(laptop) {
+            opacity: 0;
+        }
+
+    }
+
+}
+
+.come-in {
+    opacity: 1;
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+
+    .template__about-page & {
+        opacity: 1;
+        transform: translateY(0);
+        animation: none;
+
+        @include media-query(laptop) {
+            opacity: 1;
+            transform: translateY(150px);
+            animation: come-in 0.8s ease forwards;
+        }
+
+    }
+
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+
+    .template__about-page & {
+        animation: none;
+    }
+
+}
+
+.already-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
+}

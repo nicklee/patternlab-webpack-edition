@@ -1,0 +1,22 @@
+.footer-link-item {
+    @include font-size(xs);
+    margin-right: 0;
+    color: $color--warm-grey2;
+    text-align: center;
+
+    @include media-query(laptop) {
+        margin-right: ($grid / 2);
+        text-align: left;
+    }
+
+    &__link {
+        color: $color--black;
+        text-decoration: none;
+
+        &:hover {
+            color: $color--link-hover;
+        }
+
+    }
+
+}

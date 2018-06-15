@@ -1,0 +1,76 @@
+.filters {
+    $root: &;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+
+    @include media-query(laptop) {
+        margin-right: 0;
+        width: auto;
+    }
+
+    .filtered-list & {
+        @include gutter(0.25, 1, 0.75, 1);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__container {
+
+        @include media-query(tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-basis: 100%;
+        min-width: 0;
+        max-width: 100%;
+
+        @include media-query(tablet) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+    }
+
+    &__header {
+
+        .overview-bar & {
+            display: none;
+        }
+
+    }
+
+    &__heading {
+        @include gutter(0, 0.25, 0, 0);
+        @include font-size(l);
+        font-weight: 300;
+        margin-bottom: 0;
+        color: $color--black;
+
+        .overview-bar & {
+            display: none;
+        }
+
+        .template__homepage & {
+            display: none;
+
+            @include media-query(tablet) {
+                display: block;
+            }
+
+        }
+
+    }
+
+}

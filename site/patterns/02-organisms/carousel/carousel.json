@@ -1,0 +1,140 @@
+{
+    "title" : "Latest funding opportunities",
+    "carouselClass" : [
+        {
+            "class" : "js-carousel"
+        }
+    ],
+    "items" : [
+        {
+            "title" : "Longitude Prize",
+            "count" : "1",
+            "href" : "#",
+            "image" : "../../../images/browser-image_art.jpg",
+            "description" : "We show the value of the creative economy and advise governments at every level on how to help it grow. And we help arts and cultural organisations develop new sources of funding and reach new audiences.",
+            "featureOne" : false,
+            "featureTwo" : [
+                {
+                    "title": "Projects",
+                    "loadMore" : false,
+                    "items": [
+                        {
+                            "title" : "Project name",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        },
+                        {
+                            "title" : "Project name 2",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "Education",
+            "count" : "2",
+            "href" : "#",
+            "image" : "../../../images/browser-image_education.jpg",
+            "description" : "We are preparing young people for an increasingly digital workplace by understanding the future of work, backing digital learning technologies and campaigning for more creative, robot-resistant skills.",
+            "featureOne" : false,
+            "featureTwo" : [
+                {
+                    "title": "Projects",
+                    "loadMore" : false,
+                    "items": [
+                        {
+                            "title" : "Project name",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        },
+                        {
+                            "title" : "Project name 2",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "Government Innovation",
+            "count" : "3",
+            "href" : "#",
+            "image" : "../../../images/browser-image_government-innovation.jpg",
+            "description" : "We help governments and the public sector to innovate - achieving more with less, and making the most of digital technologies to engage their populations in decisions and the daily life of public services.",
+            "featureOne" : false,
+            "featureTwo" : [
+                {
+                    "title": "Projects",
+                    "loadMore" : false,
+                    "items": [
+                        {
+                            "title" : "Project name",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        },
+                        {
+                            "title" : "Project name 2",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "Health",
+            "count" : "4",
+            "href" : "#",
+            "image" : "../../../images/browser-image_health.jpg",
+            "description" : "We look for better ways for people to remain healthy - using technology, data and mutual support to manage and improve their health and wellbeing. We think that living well with ongoing health conditions, and preventing physical and mental ill health, is critical to making the health and care system sustainable in the long term.",
+            "featureOne" : false,
+            "featureTwo" : [
+                {
+                    "title": "Projects",
+                    "loadMore" : false,
+                    "items": [
+                        {
+                            "title" : "Project name",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        },
+                        {
+                            "title" : "Project name 2",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "Innovation Policy",
+            "count" : "5",
+            "href" : "#",
+            "image" : "../../../images/browser-image_innovation.jpg",
+            "description" : "We gather, analyse and spread the best methods from around the world that governments (at a national, regional and city level) can use to support successful innovation in the economy and society.",
+            "featureOne" : false,
+            "featureTwo" : [
+                {
+                    "title": "Projects",
+                    "loadMore" : false,
+                    "items": [
+                        {
+                            "title" : "Project name",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        },
+                        {
+                            "title" : "Project name 2",
+                            "text" : "Donec ullamcorper nulla non metus auctor fringilla.",
+                            "href" : "#"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "audienceNavigation" : [
+        {
+            "title" : "About",
+            "href" : "#"
+        },
+        {
+            "title" : "Help me innovate",
+            "href" : "#"
+        },
+        {
+            "title" : "Latest",
+            "href" : "#"
+        }
+    ]
+}

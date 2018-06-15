@@ -1,0 +1,24 @@
+{
+    "priorityNavigation" : [
+        {
+            "title" : "Primary nav 1",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 2",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 3",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 4",
+            "href" : "#",
+            "dropdown" : false
+        }
+    ]
+}

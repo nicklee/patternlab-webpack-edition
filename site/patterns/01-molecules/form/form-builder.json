@@ -1,0 +1,84 @@
+{
+    "formbuilder" : [
+        {
+            "title" : "Your details",
+            "type" : "fieldset",
+            "items" : [
+                {
+                    "type" : "input",
+                    "specimen" : "text",
+                    "label" : "Name",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : ""
+                },
+                {
+                    "type" : "input",
+                    "specimen" : "date",
+                    "label" : "Date of birth",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : ""
+                }
+            ]
+        },
+        {
+            "title" : "Contact information",
+            "type" : "fieldset",
+            "items" : [
+                {
+                    "type" : "input",
+                    "specimen" : "tel",
+                    "label" : "Home telephone",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : ""
+                },
+                {
+                    "type" : "input",
+                    "specimen" : "email",
+                    "label" : "Email address",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : ""
+                }
+            ]
+        },
+        {
+            "title" : "About you",
+            "type" : "fieldset",
+            "items" : [
+                {
+                    "type" : "radio",
+                    "label" : "How can we help you?",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : "",
+                    "items" : [
+                        {
+                            "title" : "Yes",
+                            "name" : "yes"
+                        },
+                        {
+                            "title" : "No",
+                            "name" : "no"
+                        }
+                    ]
+                },
+                {
+                    "type" : "textarea",
+                    "label" : "What do you feel is causing your symptoms?",
+                    "placeholder" : "",
+                    "name" : "",
+                    "description" : ""
+                },
+                {
+                    "type" : "submit",
+                    "title" : "Submit Referral",
+                    "description" : ""
+                }
+            ]
+        }
+    ],
+    "formSubmit" : "Submit referral"
+}

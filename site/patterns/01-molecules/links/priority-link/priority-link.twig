@@ -1,0 +1,10 @@
+<a class="priority-link" href="{{ href|default('#') }}">
+    <span class="priority-link__label">
+        {% autoescape false %}
+        {{ title|raw|default('title') }}
+        {% endautoescape %}
+    </span>
+    {% if dropdown %}
+        {% include "@molecules/dropdown/dropdown.twig" %}
+    {% endif %}
+</a>

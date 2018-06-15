@@ -1,0 +1,17 @@
+.audience-nav {
+    @include gutter(0, 0.5, 0, 0.5);
+
+    &__menu {
+        display: none;
+
+        @include media-query(tablet) {
+            display: block;
+        }
+
+        &__item {
+            @include gutter(0, 0.5, 0, 0.5);
+            display: inline-block;
+        }
+    }
+
+}

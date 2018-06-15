@@ -1,0 +1,13 @@
+{
+    "title" : "Slideshow",
+    "items" : [
+        {
+            "title" : "In northern Tanzania Maasai women and their children often collect the drinking water each day, relying on their donkeys to carry their heavy cargo over long distances.",
+            "image" : "../../../images/fpo_16x9.png"
+        },
+        {
+            "title" : "Test caption",
+            "image" : "../../../images/fpo_16x9.png"
+        }
+    ]
+}

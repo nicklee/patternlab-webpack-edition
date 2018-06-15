@@ -1,0 +1,103 @@
+<div class="page-heading{% if bubbles %} page-heading--bubbles{% endif %}{% if pageHeadingModifier %} page-heading--{{ pageHeadingModifier }}{% endif %}">
+    <div class="page-heading__container">
+
+        <div class="page-heading__content">
+
+            {% if breadcrumb %}
+                <div class="page-heading__breadcrumb">
+                    {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                </div>
+            {% endif %}
+
+            {% if title %}
+                <h1 class="page-heading__heading">{{ title }}</h1>
+            {% endif %}
+
+            {% if subHeading %}
+            <div class="page-heading__sub-heading">
+                <div class="page-heading__sub-heading-text">
+                    {{ subHeading }}
+                </div>
+            </div>
+            {% elseif introduction %}
+                <div class="page-heading__introduction">
+                    {% include "@atoms/introduction/introduction.twig" %}
+                </div>
+            {% endif %}
+
+            {% if published or areaOfWork or comments or readTime or stage %}
+            <div class="page-heading__meta">
+                <div class="page-heading__meta-container meta">
+                    {% if published %}
+                    <div class="page-heading__category meta-item">
+                        <div class="page-heading__category-container meta-item__label">
+                            {{ published }}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if areaOfWork %}
+                    <div class="page-heading__category meta-item">
+                        <div class="page-heading__category-container meta-item__label">
+                            <div class="meta-item__multi-item">
+                                In
+                                <a class="page-heading__category-link meta-item__link" href="#">
+                                    {{ areaOfWork }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if stage %}
+                    <div class="page-heading__category meta-item">
+                        <div class="page-heading__category-container meta-item__label">
+                            {{ stage }}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if comments %}
+                    <div class="page-heading__category meta-item">
+                        <div class="page-heading__category-container meta-item__label">
+                            <a class="comments__link js-slowscroll meta-item__link" href="#comments">{{ comments.count }} comments</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if readTime %}
+                        {% include "@atoms/read-time/read-time.twig" %}
+                    {% endif %}
+                </div>
+            </div> <!-- /page-heading__meta -->
+            {% endif %}
+
+            {% if downloads %}
+                <div class="page-heading__downloads">
+                    <div class="page-heading__download-item">
+                        <a class="btn btn--primary btn--icon" href="#">
+                            <div class="btn__label">{{ primaryDownload }}</div>
+                            <svg class="btn__icon" width="24" height="24">
+                                <use xlink:href="#download" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="page-heading__download-item">
+                        <a class="btn btn--secondary" href="#">
+                            <div class="btn__container">
+                                <div class="btn__label">{{ secondaryDownload }}</div>
+                                {% if secondaryDownloadMeta %}<div class="btn__meta">667Kb</div>{% endif %}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+
+        {% if profileImage %}
+            {% include "@molecules/profile-image/profile-image.twig" with profileImage %}
+        {% endif %}
+
+        {% if bubbles %}
+            {% include "@organisms/bubble-grid/bubble-grid.twig" with bubbles %}
+        {% endif %}
+
+    </div>
+</div>

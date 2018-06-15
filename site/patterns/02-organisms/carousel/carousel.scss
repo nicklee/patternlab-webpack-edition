@@ -1,0 +1,87 @@
+.carousel {
+    position: relative;
+
+    &__container {
+        @include aligner;
+    }
+
+    /* Overrride owl carousel css */
+
+    .owl-carousel {
+        position: static;
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        top: 50%;
+        width: 100%;
+        margin-top: -($grid * 1.25);
+
+        button.owl-prev,
+        button.owl-next {
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+            background-color: transparent;
+            background-size: ($grid * 2.5);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: ($grid * 2.5);
+            height: ($grid * 2.5);
+            text-indent: -9999px;
+            overflow: hidden;
+            // sass-lint:disable indentation
+            transition: transform $default-transition-speed ease 0s;
+            // sass-lint:enddisable
+
+            @include media-query(tablet) {
+                width: ($grid * 3);
+                height: ($grid * 2);
+                background-size: ($grid * 3);
+            }
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+
+            &.disabled {
+                opacity: 0.5;
+            }
+
+        }
+
+        button.owl-prev {
+            left: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.2 6.5L9.6 12l5.6 5.6-.4.4-6-6 6-6 .4.5z'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+
+            &:hover {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.2 6.4L9.6 12l5.6 5.6-.4.4-6-6 6-6 .4.4z' fill='%23fab721'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+            }
+
+        }
+
+        button.owl-next {
+            right: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.8 17.6l5.6-5.6-5.6-5.5.4-.5 6 6-6 6-.4-.4z'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+
+            &:hover {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.8 17.6l5.6-5.6-5.6-5.6.4-.4 6 6-6 6-.4-.4z' fill='%23fab721'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+            }
+        }
+
+    }
+
+}
+
+// sass-lint:disable-all
+// Override scroll behaviour on mobile
+.carousel .owl-carousel .owl-stage,
+.carousel .owl-carousel.owl-drag .owl-item,
+.browser .owl-carousel .owl-stage,
+.browser .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+// sass-lint:enable-all

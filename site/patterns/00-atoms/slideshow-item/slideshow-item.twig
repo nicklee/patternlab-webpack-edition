@@ -1,0 +1,6 @@
+<div class="slideshow-item">
+    {% if link %}<a class="slideshow-item__link" data-fancybox href="{{ image }}">{% endif %}
+        <img class="slideshow-item__image" src="{{ image }}" alt="" />
+        <div class="slideshow-item__caption">{{ title }}</div>
+    {% if link %}</a>{% endif %}
+</div>

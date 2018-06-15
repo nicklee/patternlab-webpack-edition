@@ -1,0 +1,121 @@
+.priority-link {
+    $root: &;
+    text-decoration: none;
+    color: $color--black;
+    transition: color $default-transition-speed ease 0s;
+
+    // Mobile nav
+    .app-navigation & {
+        @include gutter(0.1, 0, 0.1, 0);
+        display: block;
+        color: $color--black;
+        text-align: center;
+        font-weight: 700;
+
+        @include media-query(tablet) {
+            @include gutter(0.2, 0, 0.2, 0);
+        }
+
+    }
+
+    .app-navigation__audience-links & {
+        @include gutter(0.1, 0, 0.1, 0);
+        font-weight: 300;
+
+        @include media-query(tablet) {
+            @include gutter(0.2, 0, 0.2, 0);
+        }
+
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color--primary;
+
+        .dropdown {
+
+            @include media-query(tablet) {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+        }
+
+    }
+
+    // Only shown on laptop + sizes
+    .app-header__navigation & {
+        @include gutter(0, 0.25, 0, 0.225);
+        @include rem-font-size(17px);
+        display: block;
+        font-weight: 500;
+        line-height: 1;
+
+        @media (min-width: 1050px) {
+            @include gutter(0, 0.3, 0, 0.3, true);
+            @include rem-font-size(18px);
+        }
+
+        @media (min-width: 1150px) {
+            @include rem-font-size(19px);
+        }
+
+        @include media-query(large) {
+            @include rem-font-size(20px);
+        }
+
+        @include media-query(wide) {
+            @include font-size(m);
+        }
+
+        &__label {
+            display: block;
+
+            @include media-query(laptop) {
+                // Bottom gutter should match app-header__container top gutter
+                @include gutter(0, 0, 0.75, 0);
+            }
+
+            @include media-query(wide) {
+                @include gutter(0, 0, 0.5, 0);
+            }
+
+        }
+
+    }
+
+    .app-header__audience-navigation & {
+        @include gutter(0.25, 0.6, 0.25, 0);
+        @include font-size(xs);
+        color: $color--black;
+        font-weight: 500;
+
+        @include media-query(desktop) {
+            @include font-size(s);
+        }
+
+        @include media-query(wide) {
+            @include font-size(default);
+            font-weight: 300;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color--primary;
+        }
+
+    }
+
+    .app-header__navigation .priority-nav__menu__item:last-child & {
+        padding-right: 0 !important;
+    }
+
+    .app-header__navigation .priority-nav__menu__item:first-child & {
+        padding-left: 0 !important;
+    }
+
+}

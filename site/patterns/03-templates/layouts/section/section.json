@@ -1,0 +1,262 @@
+{
+    "title" : "Health",
+    "template" : "section",
+    "progressBar" : true,
+    "hero" : {
+        "title" : "Health",
+        "introduction": "We look for better ways for people to remain healthy - using technology, data and mutual support to manage and improve their health and wellbeing.",
+        "href" : "#",
+        "image" : "../../../images/browser-image_health.jpg",
+        "action" : "Our Vision"
+    },
+    "overviewNav" : {
+        "title" : "In Health",
+        "items" : [
+            {
+                "title" : "In this section…",
+                "nested" : [
+                    {
+                        "title" : "About health",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Projects",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "News",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Event",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Data",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Case studies",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Toolkits",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Reports",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Funding",
+                        "href" : "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "filters" : false,
+    "latest" : {
+        "title" : "",
+        "filterable" : true,
+        "items" : [
+            {
+                "title" : "Health Lab - practical work on health and ageing",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "text" : "",
+                "image" : "../../../images/listing-image4.jpg",
+                "imageBg" : true,
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "23rd Nov"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "text" : "",
+                "image" : "../../../images/listing-image2.jpg",
+                "subCategory" : "category--blogs",
+                "sticky" : true,
+                "meta" : [
+                    {
+                        "title" : "Blog",
+                        "date" : "18th Oct"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "text" : "",
+                "image" : "../../../images/listing-image.jpg",
+                "subCategory" : "category--data js-col-width",
+                "meta" : [
+                    {
+                        "title" : "Data"
+                    }
+                ]
+            },
+            {
+                "title" : "Matching the crowd",
+                "href" : "../04-pages-report-matching-the-crowd/04-pages-report-matching-the-crowd.html",
+                "text" : "",
+                "image" : "../../../images/listing-image2.jpg",
+                "subCategory" : "category--reports",
+                "meta" : [
+                    {
+                        "title" : "Report"
+                    }
+                ]
+            },
+            {
+                "title" : "Setting Our Sights: A strategy for maximising social impact",
+                "href" : "#",
+                "text" : "",
+                "image" : "../../../images/listing-image3.jpg",
+                "subCategory" : "category--blogs",
+                "sticky" : true,
+                "meta" : [
+                    {
+                        "title" : "Blog",
+                        "date" : "18th July"
+                    }
+                ]
+            },
+            {
+                "title" : "Setting Our Sights: A strategy for maximising social impact",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--data js-col-width",
+                "meta" : [
+                    {
+                        "title" : "Data"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--reports",
+                "meta" : [
+                    {
+                        "title" : "Report"
+                    }
+                ]
+            },
+            {
+                "title" : "Matching the crowd - Combining crowdfunding and institutional funding…",
+                "href" : "../04-pages-report-matching-the-crowd/04-pages-report-matching-the-crowd.html",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--blogs",
+                "sticky" : true,
+                "meta" : [
+                    {
+                        "title" : "Blog",
+                        "date" : "18th July"
+                    }
+                ]
+            }
+        ]
+    },
+    "toolkits" : {
+        "title" : "Projects",
+        "items" : [
+            {
+                "title" : "Creating Confidence",
+                "contentType" : "Our health projects",
+                "count" : "1",
+                "href" : "#",
+                "image" : "../../../images/browser-image_health1.jpg",
+                "description" : "We are exploring the potential for our public services to be redesigned to give people more control of their lives.",
+                "featureOne" : [
+                    {
+                        "title": "Team",
+                        "items": [
+                            {
+                                "title" : "Christina Cornwell",
+                                "href" : "#",
+                                "image" : "../../../images/team_christina-cornwell.jpg"
+                            },
+                            {
+                                "title" : "Esther Flanagan",
+                                "href" : "#",
+                                "image" : "../../../images/team_esther-flanagan.jpg"
+                            }
+                        ]
+                    }
+                ],
+                "featureTwo" : false
+            },
+            {
+                "title" : "Health as a Social Movement",
+                "contentType" : "Our health projects",
+                "count" : "2",
+                "href" : "#",
+                "image" : "../../../images/browser-image_health2.jpg",
+                "description" : "We are exploring how social movements effectively impact health and care as well as the wider culture and environment in which health and healthcare happen.",
+                "featureOne" : [
+                    {
+                        "title": "Team",
+                        "items": [
+                            {
+                                "title" : "Christina Cornwell",
+                                "href" : "#",
+                                "image" : "../../../images/team_christina-cornwell.jpg"
+                            },
+                            {
+                                "title" : "Esther Flanagan",
+                                "href" : "#",
+                                "image" : "../../../images/team_esther-flanagan.jpg"
+                            }
+                        ]
+                    }
+                ],
+                "featureTwo" : false
+            },
+            {
+                "title" : "People Powered Results",
+                "contentType" : "Our health projects",
+                "count" : "3",
+                "href" : "#",
+                "image" : "../../../images/browser-image_health3.jpg",
+                "description" : "People Powered Results works with people across health and care systems to spark front line collaboration to achieve meaningful results.",
+                "featureOne" : [
+                    {
+                        "title": "Team",
+                        "items": [
+                            {
+                                "title" : "Halima Kahn",
+                                "href" : "#",
+                                "image" : "../../../images/team_halima-kahn.jpg"
+                            },
+                            {
+                                "title" : "Daniel Farag",
+                                "href" : "#",
+                                "image" : "../../../images/team_daniel-farag.jpg"
+                            }
+                        ]
+                    }
+                ],
+                "featureTwo" : false
+            }
+        ]
+    },
+    "cta" : {
+        "title" : "Open innovation in health",
+        "text" : "A guide to transforming healthcare through collaboration",
+        "link" : "#",
+        "action" : "View our toolkit"
+    }
+}

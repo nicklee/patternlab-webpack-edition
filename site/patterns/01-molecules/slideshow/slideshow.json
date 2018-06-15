@@ -1,0 +1,13 @@
+{
+    "title" : "Slideshow",
+    "items" : [
+        {
+            "title" : "First test caption",
+            "image" : "../../../images/browser-image_art.jpg"
+        },
+        {
+            "title" : "Test caption",
+            "image" : "../../../images/browser-image_health.jpg"
+        }
+    ]
+}

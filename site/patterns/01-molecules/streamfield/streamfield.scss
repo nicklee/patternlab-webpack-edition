@@ -1,0 +1,63 @@
+.streamfield {
+    @include gutter(0, 0, 1, 0);
+
+    a {
+        color: $color--link-hover;
+        transition: color $default-transition-speed ease 0s;
+
+        &:hover {
+            color: $color--link;
+        }
+
+    }
+
+    &__heading {
+        @include gutter(1, 0, 0, 0);
+        font-weight: 700;
+
+        @include media-query(tablet) {
+            max-width: 75%;
+        }
+    }
+
+    &__image {
+        text-align: center;
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+
+    &__image-item {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        @include font-size(l);
+        font-weight: 700;
+    }
+
+    h3 {
+        @include font-size(m);
+        font-weight: 700;
+    }
+
+    h4,
+    h5 {
+        @include font-size(default);
+        font-weight: 700;
+    }
+
+    .template__job-index-page & {
+        @include gutter(1, 0, 1, 0);
+    }
+
+    .template__quiz-page & {
+        @include gutter(1, 0, 0.5, 0);
+    }
+
+}

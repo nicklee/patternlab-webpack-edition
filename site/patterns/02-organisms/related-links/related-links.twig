@@ -1,0 +1,26 @@
+<div class="related-links {% for item in modifier %}related-links--{{ item.class }} {% endfor %}">
+    <div class="related-links__container">
+        <div class="page__content-container">
+            <div class="page__primary-content page__primary-content--centered">
+                <div class="related-links__header">
+                    <h2 class="related-links__heading">{{ title }}</h2>
+                </div>
+                <div class="related-links__content">
+                    <div class="related-link-item">
+                        <a href="#" class="related-link-item__link">
+                            <svg class="related-link-item__icon" width="21px" height="21px">
+                                <use xlink:href="#external"></use>
+                            </svg>
+                            <div class="related-link-item__label">External link</div>
+                        </a>
+                    </div>
+                    <div class="related-link-item">
+                        <a href="#" class="related-link-item__link">
+                            <div class="related-link-item__label">Normal link</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /related-links -->

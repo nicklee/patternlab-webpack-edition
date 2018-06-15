@@ -1,0 +1,24 @@
+<div class="overview-bar js-sticky">
+    <div class="overview-bar__container">
+
+        {% if secondaryNav %}
+            <div class="overview-bar__secondary-nav">
+                {% include "@organisms/navigation/secondary-nav/secondary-nav.twig" with secondaryNav only %}
+            </div>
+        {% else %}
+            <div class="overview-bar__header">
+                <h2 class="overview-bar__heading">{{ title|raw }}</h2>
+            </div>
+        {% endif %}
+
+        <div class="overview-bar__content">
+
+            {% if overviewNav %}
+            <div class="overview-bar__nav">
+                {% include "@organisms/filters/filters.twig" with overviewNav only %}
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

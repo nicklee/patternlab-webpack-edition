@@ -1,0 +1,197 @@
+/*------------------------------------*\
+    $App header
+\*------------------------------------*/
+
+.app-header {
+    @include gutter(0, 0, 0, 0);
+    $root: &;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: $color--white;
+    border-bottom: 1px solid transparent;
+    // sass-lint:disable indentation
+    transition: background-color $default-transition-speed ease 0s,
+                border-bottom $default-transition-speed ease 0s;
+    // sass-lint:enddisable
+
+    &__container {
+        @include gutter(0.5, 1, 0.5, 1);
+        @include aligner;
+        transition: padding $default-transition-speed ease 0s;
+
+        @include media-query(laptop) {
+            @include gutter(0.75, 1, 0, 1);
+        }
+
+        @include media-query(wide) {
+            @include gutter(0.5, 0, 0, 0);
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        top: ($grid / 4);
+
+        @include media-query(tablet) {
+            align-items: stretch;
+        }
+
+    }
+
+    &__search-toggle {
+        display: flex;
+        align-items: center;
+
+        @include media-query(laptop) {
+            display: none;
+        }
+
+    }
+
+    &__home-link {
+
+        @include media-query(tablet) {
+            flex-basis: auto;
+        }
+
+        @include media-query(laptop) {
+            // Bottom gutter should match app-header__container top gutter
+            @include gutter(0, 0, 0.75, 0);
+        }
+
+        @include media-query(desktop) {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @include media-query(wide) {
+            @include gutter(0, 0, 0.5, 0);
+        }
+
+    }
+
+    &__nav-container {
+
+        @include media-query(laptop) {
+            display: flex;
+            flex-direction: column;
+            flex-basis: auto;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        @include media-query(laptop) {
+            height: auto;
+        }
+
+    }
+
+    &__audience-navigation {
+        @include font-size(s);
+        display: none;
+
+        @include media-query(laptop) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+    }
+
+    // Template specific
+
+    .headroom--not-top &,
+    .template__data & {
+        border-color: $color--border-light;
+
+        #{$root}__container {
+            padding-top: ($grid / 2);
+            padding-bottom: ($grid / 2);
+
+            @include media-query(tablet) {
+                padding-bottom: ($grid / 2);
+            }
+
+            @include media-query(wide) {
+                padding-bottom: ($grid / 2);
+            }
+        }
+
+        #{$root}__home-link {
+            @include gutter(0, 0, 0, 0, true);
+        }
+
+        #{$root}__nav-container {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        #{$root}__navigation {
+            @include gutter(0, 0, 0, 0.5);
+
+            @include media-query(laptop) {
+                border-left: 1px solid $color--border-light;
+            }
+
+        }
+
+        #{$root}__audience-navigation {
+            @include gutter(0, 0, 0, 0);
+            margin-right: ($grid / 2);
+            min-width: 24px; // Width of search icon for IE
+        }
+
+    }
+
+    .template__homepage & {
+        background-color: transparent;
+
+        #{$root}__nav-container {
+
+            @include media-query(tablet) {
+                animation: fadein 5s;
+            }
+
+        }
+
+    }
+
+    // sass-lint:disable force-element-nesting
+    .headroom--not-top .template__homepage & {
+        background-color: $color--white;
+    }
+    // sass-lint:enddisable
+
+    .header--light &,
+    .header--dark & {
+        background-color: transparent;
+    }
+
+    .headroom--top .template__about & {
+        background-color: transparent;
+    }
+
+    // Animations
+
+    @keyframes fadein {
+
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+}

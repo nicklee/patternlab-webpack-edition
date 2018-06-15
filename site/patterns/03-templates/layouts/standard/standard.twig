@@ -1,0 +1,165 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+
+        {% include "@organisms/page-heading/page-heading.twig" %}
+
+    </div>
+
+    <div class="page__content">
+
+        {% if overviewNav %}
+            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+        {% endif %}
+
+        {% if dataFull %}
+            {% include "@molecules/iframe/iframe.twig" with dataFull %}
+        {% endif %}
+
+        <div class="page__content-container">
+
+            <div class="page__primary-content page__primary-content--centered">
+
+                {% if share %}
+                    {% include "@molecules/share/share-sticky.twig" with share only %}
+                {% endif %}
+
+                <div class="streamfield">
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item"> Though there have been many challenges and lessons along the way for the ODA programme, which aims to join up data held by local authorities to enable actionable insights, in this blog I outline the three I believe are the most important. They should be of equal interest to those working both inside and outside of the public sector to unlock the true value of its data.</p>
+                    </div>
+
+                    {% if imageFull %}
+                        {% include "@atoms/images/image-full/image-full.twig" with imageFull %}
+                    {% endif %}
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item"> Though there have been many challenges and lessons along the way for the ODA programme, which aims to join up data held by local authorities to enable actionable insights, in this blog I outline the three I believe are the most important. They should be of equal interest to those working both inside and outside of the public sector to unlock the true value of its data.</p>
+                    </div>
+
+                    <div class="streamfield__text">
+                        {% if image %}
+                            {% include "@atoms/images/image-inline/image-inline.twig" with image %}
+                        {% endif %}
+                        <p class="streamfield__text-item">Though there have been many challenges and lessons along the way for the ODA programme, which aims to join up data held by local authorities to enable actionable insights, in this blog I outline the three I believe are the most important. They should be of equal interest to those working both inside and outside of the public sector to unlock the true value of its data.</p>
+                        <p class="streamfield__text-item">Though there have been many challenges and lessons along the way for the ODA programme, which aims to join up data held by local authorities to enable actionable insights, in this blog I outline the three I believe are the most important. They should be of equal interest to those working both inside and outside of the public sector to unlock the true value of its data.</p>
+                    </div>
+
+                    {% include "@atoms/inline-cta/inline-cta.twig" %}
+
+                    <h2 class="streamfield__heading" id="one">Starting with a specific problem to be solved, for which data can offer impactful and actionable insight, is essential.</h2>
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">Though seemingly obvious, it’s hard to overestimate just how critical this point is. A clearly articulated problem will focus efforts to gather data and avoid just chucking whatever you have at an ill-defined issue, which wastes time as well as goodwill. A specific problem will also support a smoother information governance process, by providing a clear and legal rationale for why certain data needs to be shared.</p>
+                    </div>
+
+                    {% if slideshow %}
+                        {% include "@molecules/slideshow/slideshow.twig" with slideshow %}
+                    {% endif %}
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">Though seemingly obvious, it’s hard to overestimate just how critical this point is. A clearly articulated problem will focus efforts to gather data and avoid just chucking whatever you have at an ill-defined issue, which wastes time as well as goodwill. A specific problem will also support a smoother information governance process, by providing a clear and legal rationale for why certain data needs to be shared.</p>
+                        <p class="streamfield__text-item">But in a sector with no shortages of challenges big and small, it can be surprisingly tricky to pin down an actionable problem, especially one suited to a data solution. To help the public sector (and ourselves) better recognise these kinds of problem, we’ve combined our research with a framework developed by the <a href="#">New Orleans analytics team</a> to highlight the types of challenges where data can help. They are categorised in the graphic below.</p>
+                    </div>
+
+                    <div class="streamfield__image">
+                        <img class="streamfield__image-item" src="../../../images/info-graphic.png" alt="" />
+                    </div>
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">So don’t be afraid to take your time in finding ‘the right one’ and don’t settle for a vague problem statement, this will only lead to weak or less-than actionable insights. Equally, remember to involve end-users in this stage (and throughout the entire project process) as much as possible. Doing so will not only support stronger analysis, but will also build much needed buy-in for the initiative.</p>
+                    </div>
+
+                    {% include "@atoms/inline-cta/inline-cta.twig" %}
+
+                    <h2 class="streamfield__heading" id="two">A data project in the public sector is just as often a change management project.</h2>
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">You can’t simply “do data to an organisation”, as one of our roundtable experts put it. Even a relatively small scale initiative is likely to bump up against fundamental ways in which the organisation operates on a day-to-day basis. Projects with data at their core need to design this reality into the their deployment plans.</p>
+                    </div>
+
+                    {% include "@atoms/image-caption/image-caption.twig" %}
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">First, there is the obvious change to consider involving new tech, methods and skills needed to support a given project, though it is possible to buy this in. The more difficult change to manage is the new way data projects require people to work together. For our <a href="#">London Office of Data Analytics (LODA) pilot</a>, one consistent piece of feedback from partner boroughs was that it encouraged them to collaborate in novel ways across the organisation to meet the requirements of the pilot. Through this exposure to other teams, important gaps and opportunities for further collaboration were revealed.</p>
+                        <p class="streamfield__text-item">Finally, there’s much to be said about the shift in organisational culture and mindset needed for projects with a strong data component. In particular, the generally high levels of risk aversion and territoriality that come with information sharing can be a major roadblock. Gaining the trust and buy-in from staff that may not see data as part of their role, or even view it with suspicion, is equally challenging.</p>
+                    </div>
+
+                    {% if video %}
+                        {% include "@molecules/iframe/iframe.twig" with video %}
+                    {% endif %}
+
+                    {% include "@atoms/blockquote/blockquote.twig" %}
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">These issues are difficult, but not insurmountable. Starting with a proof of concept phase and ensuring staff engagement throughout the process can go a long way.</p>
+                    </div>
+
+                    {% if dataBanner %}
+                        {% include "@molecules/data-banner/data-banner.twig" with dataBanner %}
+                    {% endif %}
+
+                    <h2 class="streamfield__heading" id="three">Ultimately, quality data underpins everything.</h2>
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">At the Future Cities Catapult event, the evening’s five speakers all emphasised the preeminence of human relationships and the ‘people’ element of successful data projects. During the panel, an audience member instead asserted that access to quality data is the more essential piece. I would compromise and say they are equally important, as having even excellent data does not guarantee success (see points 1 and 2 above). However, it is also difficult to disagree with the fact that, with all the goodwill in the world, useful analysis cannot be undertaken without reasonably good data quality.</p>
+                        <p class="streamfield__text-item">For the LODA pilot, which sought to identify unlicensed Houses in Multiple Occupation by joining up and analysing various data collected on all properties (e.g. location and age of property, complaints such as Anti-Social Behaviour or pests against it, occupancy numbers, council benefits received etc.) we started out with 12 boroughs. By the end of our data gathering process, which took roughly five months, just four boroughs were deemed to have sufficiently good quality data to proceed with analysis.</p>
+                    </div>
+
+                    {% if data %}
+                    <h2 class="streamfield__heading" id="three">Data embed</h2>
+                        {% include "@molecules/iframe/iframe.twig" with data %}
+                    {% endif %}
+
+                    <ul class="streamfield__unordered-list">
+                        <li>Can you learn something interesting?</li>
+                        <li>Is the programme suitable for running a trial?</li>
+                        <li>Is a trial technically feasible?</li>
+                        <li>Is there political will to run a trial?</li>
+                    </ul>
+
+                    <h3 class="streamfield__heading">Reaching high impact businesses and entrepreneurs</h3>
+
+                    {% if accordion %}
+                        {% include "@atoms/accordion/accordion.twig" with accordion %}
+                    {% endif %}
+
+                    <div class="streamfield__text">
+                        <p class="streamfield__text-item">For the third workshop we wanted to go back and test a premise from the first – that the success of innovation, entrepreneurship and business growth policy should be measured in terms of growth of individual businesses.</p>
+                    </div>
+
+                </div> <!-- /streamfield -->
+
+            </div> <!-- /page__primary-content -->
+
+        </div> <!-- /page__content-container -->
+
+    </div> <!-- /page__content -->
+
+    <div class="page__footer">
+        <div class="page__footer-container">
+            {% if comments %}
+            <div class="page__footer-item comments-block">
+                <div class="page__footer-item__container">
+                    {% include "@organisms/comments/comments.twig" with comments %}
+                </div>
+            </div>
+            {% endif %}
+            <div class="page__footer-item listing--related">
+                <div class="page__footer-item__container">
+                    {% include "@organisms/listing/listing.twig" with related %}
+                </div>
+            </div>
+            {% if cta %}
+                {% include "@molecules/03-cta/cta.twig" with cta %}
+            {% endif %}
+            {% if fixedMessage %}
+                {% include "@molecules/fixed-message/fixed-message.twig" with fixedMessage %}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

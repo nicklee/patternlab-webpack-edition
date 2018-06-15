@@ -1,0 +1,221 @@
+/*------------------------------------*\
+    $Variables
+\*------------------------------------*/
+
+
+/* ============================================
+   Colours
+*/
+
+/* Primary */
+$color--beige:                  #a49483;
+$color--yellow:                 #fab721;
+$color--orange:                 #eb5c1c;
+$color--pink:                   #e61f47;
+$color--purple:                 #783b8f;
+
+/* Secondary */
+$color--dark-olive:             #9e902a;
+$color--olive:                  #c5b100;
+$color--light-orange:           #f08019;
+$color--dark-pink:              #bd3b8e;
+$color--dark-purple:            #3a2051;
+
+/* Warm greys */
+$color--warm-grey1:             #2d2a25;
+$color--warm-grey2:             #6a5847;
+$color--warm-grey3:             #877664;
+// Darken to meet accessibility contrast
+$color--original-warm-grey4:    #a49483;
+$color--warm-grey4:             darken($color--original-warm-grey4, 2%);
+$color--warm-grey5:             #b5a79a;
+$color--warm-grey6:             #c6bcb2;
+
+/* New colours */
+$color--new-vivid-yellow:       #ebe31e;
+$color--new-yellow:             #f2d501;
+$color--new-mauve:              #c06ba8;
+$color--new-pink:               #c14291;
+$color--new-purple:             #5a4a99;
+$color--new-dark-purple:        #2d276a;
+$color--new-off-red:            #866c6b;
+$color--new-brown:              #701a0d;
+$color--new-dark-down:          #44110f;
+$color--new-light-cyan:         #6ac6dc;
+$color--new-cyan:               #00b4e1;
+$color--new-dark-cyan:          #1089ca;
+$color--new-blue:               #414898;
+$color--new-lime:               #c9d411;
+$color--new--dark-lime:         #c9d411;
+$color--new-viper:              #45ac34;
+$color--new-dark-green:         #347f33;
+
+/* stdandard colours */
+$color--white:                  #fff;
+$color--black:                  #231f20;
+$color--off-white:              #eaeaea;
+$color--off-black:              $color--black;
+
+// Theme colours
+$color--primary:                $color--pink;
+$color--secondary:              $color--yellow;
+$color--tertiary:               $color--dark-purple;
+$color--quaternary:             $color--orange;
+$color--quinary:                $color--new-vivid-yellow;
+$color--senary:                 $color--pink;
+
+// Functional Colours
+$color--overlay:                rgba($color--white, 0.95);
+$color--border:                 $color--warm-grey4;
+$color--border-light:           rgba($color--warm-grey6, 0.5);
+$color--border-dark:            $color--warm-grey2;
+
+// Type colours
+$color--default:                $color--black;
+$color--link:                   $color--black;
+$color--link-hover:             $color--pink;
+$color--meta:                   $color--warm-grey2;
+
+// Social
+// https://simpleicons.org/
+$color--facebook:               #3b5998;
+$color--twitter:                #1da1f2;
+$color--flickr:                 #0063dc;
+$color--youtube:                #cd201f;
+$color--linkedin:               #0077b5;
+
+
+/* ============================================
+   Typography
+   :: Default to system font stack
+*/
+$font-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$font--primary: $font-sans-serif;
+$font--secondary: $font-sans-serif;
+
+$base-font-size: 18px;
+$base-font-weight: 500;
+$base-font-color: $color--black;
+$base-line-height: 1.8;
+$font-sizes: (
+    // standard sizes
+    xxxl:  62px,
+    xxl:   52px,
+    xl:    42px,
+    l:     26px,
+    m:     21px,
+    default: $base-font-size,
+    s:     16px,
+    xs:    15px,
+    xxs:   13px
+);
+
+/* ============================================
+   Max width
+*/
+
+$max-width:         1380px;
+$max-width--m:      1000px;
+$max-width--s:      800px;
+
+/* ============================================
+    Transition speeds
+*/
+
+$default-transition-speed:  300ms;
+
+/* ============================================
+    Border radius
+*/
+
+$default-border-radius:     0;
+
+
+/* ============================================
+    Grid Dimentions
+*/
+
+$grid:              28px;
+
+$gutters: (
+    'default':      ($grid),
+    'mobile':       ($grid),
+    'tablet':       ($grid),
+    'laptop':       ($grid),
+    'desktop':      ($grid * 1.25),
+    'large':        ($grid * 1.25),
+    'wide':         ($grid * 1.5)
+)
+    !default;
+
+/* ============================================
+    Breakpoints
+*/
+
+$breakpoints: (
+    'mobile':       (min-width: 650px),
+    'tablet':       (min-width: 800px),
+    'laptop':       (min-width: 970px),
+    'desktop':      (min-width: 1100px),
+    'large':        (min-width: 1200px),
+    'wide':         (min-width: 1440px)
+)
+    !default;
+
+/* ============================================
+Media Query mixin
+*/
+
+@mixin media-query($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Prints a media query based on the value
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    } @else {     // If the key doesn't exist in the map
+        @warn 'Unfortunately, no value could be retrieved from '#{$breakpoint}'. ' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
+    }
+
+}
+
+/* ============================================
+   Gutter spacing
+*/
+
+@mixin gutter($top: 0.5, $right: 0.5, $bottom: 0.5, $left: 0.5, $reset: false) {
+
+    @function stomp($value) {
+        @return if($value, !important, null); // sass-lint:disable-line no-important
+    }
+
+    $p-top: map-get($gutters, 'default') * $top;
+    $p-right: map-get($gutters, 'default') * $right;
+    $p-bottom: map-get($gutters, 'default') * $bottom;
+    $p-left: map-get($gutters, 'default') * $left;
+
+    $default-pad: $p-top $p-right $p-bottom $p-left;
+
+    padding: $default-pad;
+
+    $last-pad: $default-pad;
+
+    @each $point, $value in $breakpoints {
+
+        $p-top: map-get($gutters, $point) * $top;
+        $p-right: map-get($gutters, $point) * $right;
+        $p-bottom: map-get($gutters, $point) * $bottom;
+        $p-left: map-get($gutters, $point) * $left;
+
+        $new-pad: $p-top $p-right $p-bottom $p-left;
+
+        @if( $new-pad != $last-pad ){
+            @include media-query($point) {
+                padding: $new-pad stomp($reset);
+            }
+        }
+
+        $last-pad: $new-pad;
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "items" : [
+        {
+            "type" : "input",
+            "specimen" : "text",
+            "label" : "Name",
+            "placeholder" : "",
+            "name" : "",
+            "description" : ""
+        },
+        {
+            "type" : "input",
+            "specimen" : "date",
+            "label" : "Date of birth",
+            "placeholder" : "",
+            "name" : "",
+            "description" : ""
+        }
+    ]
+}

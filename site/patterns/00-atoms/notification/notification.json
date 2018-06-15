@@ -1,0 +1,9 @@
+{
+    "title" : "Positive notification",
+    "text" : "Thanks for your comment, it's now gone to our moderation team",
+    "modifier" : [
+        {
+            "class" : "positive"
+        }
+    ]
+}

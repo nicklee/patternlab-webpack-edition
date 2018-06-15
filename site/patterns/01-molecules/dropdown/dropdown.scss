@@ -1,0 +1,100 @@
+.dropdown {
+    background-color: $color--overlay;
+
+    .app-header__navigation & {
+        display: none;
+
+        @include media-query(tablet) {
+            @include gutter(0.5, 0, 0, 0);
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            will-change: opacity;
+            transition: opacity $default-transition-speed cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+    }
+
+    // Mobile menu & search
+    .app__navigation &,
+    .search-active & {
+        display: none;
+    }
+
+    &__container {
+        @include aligner;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__content {
+        @include gutter(0.5, 0, 1.5, 0);
+        margin-left: 20%;
+
+        @media (min-width: 1050px) {
+
+        }
+
+        @media (min-width: 1150px) {
+            margin-left: 25%;
+        }
+
+        @include media-query(large) {
+            margin-left: 30%;
+        }
+
+        @include media-query(wide) {
+            margin-left: 397px;
+        }
+
+    }
+
+    &__text {
+        @include font-size(m);
+        color: $color--black;
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1.6;
+        text-align: left;
+        max-width: ($grid * 25);
+
+        @include media-query(desktop) {
+            @include font-size(l);
+        }
+
+    }
+
+    &__icon {
+        @include gutter(0, 1, 0, 0);
+        align-self: center;
+        width: ($grid * 6);
+        height: ($grid * 6);
+        fill: $color--primary;
+        transition: fill $default-transition-speed ease 0s;
+    }
+
+    &__btn {
+        @include font-size(m);
+        display: flex;
+        align-items: center;
+
+        @include media-query(desktop) {
+            @include font-size(l);
+        }
+
+    }
+
+    &__btn-icon {
+        fill: $color--primary;
+    }
+
+}

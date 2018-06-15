@@ -1,0 +1,9 @@
+.pagination {
+    @include gutter(1, 0, 1, 0);
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+}

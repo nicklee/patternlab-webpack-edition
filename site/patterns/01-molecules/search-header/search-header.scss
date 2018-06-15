@@ -1,0 +1,21 @@
+.search-header {
+    @include gutter(2, 1, 2, 1);
+    background-color: $color--secondary;
+    border-bottom: 1px solid $color--border-light;
+
+    @include media-query(laptop) {
+        @include gutter(2, 0, 2, 0);
+    }
+
+    &__container {
+        @include aligner;
+        position: relative;
+        text-align: center;
+
+        @include media-query(laptop) {
+            max-width: $max-width--s;
+        }
+
+    }
+
+}

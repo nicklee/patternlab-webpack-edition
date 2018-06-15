@@ -1,0 +1,63 @@
+{% for fieldset in formbuilder %}
+
+{% if fieldset.title %}
+<div class="form__group">
+
+    <div class="form__group-container">
+{% endif %}
+
+        {% if fieldset.title %}<h2 class="form__group-heading">{{ fieldset.title }}</h2>{% endif %}
+
+        {% for item in fieldset.items %}
+
+            <div class="form__item {% if item.type %}form__item--{{ item.type }}{% endif %}">
+
+                {% if item.label %}
+                    {% include "@atoms/form-elements/label.twig" %}
+                {% endif %}
+
+                {% if item.type == "input" %}
+
+                    {% include "@atoms/form-elements/input.twig" with item %}
+
+                {% elseif item.type == "select" %}
+
+                    {% include "@atoms/form-elements/select.twig" with item %}
+
+                {% elseif item.type == "radio" %}
+
+                    {% include "@atoms/form-elements/radio.twig" with item %}
+
+                {% elseif item.type == "checkbox" %}
+
+                    {% include "@atoms/form-elements/checkbox.twig" with item %}
+
+                {% elseif item.type == "heading" %}
+
+                    {% include "@atoms/form-elements/form-heading.twig" with item %}
+
+                {% elseif item.type == "textarea" %}
+
+                    {% include "@atoms/form-elements/textarea.twig" with item %}
+
+                {% elseif item.type == "submit" %}
+
+                    {% include "@atoms/form-elements/form-button.twig" with item %}
+
+                {% endif %}
+
+                {% if item.description %}
+                    {% include "@atoms/form-elements/description.twig" %}
+                {% endif %}
+
+            </div> <!-- /form--item -->
+
+        {% endfor %}
+
+{% if fieldset.title %}
+    </div>
+
+</div>
+{% endif %}
+
+{% endfor %}

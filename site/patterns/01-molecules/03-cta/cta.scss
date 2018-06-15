@@ -1,0 +1,71 @@
+.cta {
+    position: relative;
+    overflow: hidden;
+    background-color: $color--primary;
+
+    &__container {
+        @include gutter(2, 1, 2, 1);
+        @include aligner;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media-query(wide) {
+            @include gutter(2, 0, 2, 0);
+        }
+
+    }
+
+    &__heading {
+        @include gutter(0, 0, 0.25, 0);
+        @include font-size(l);
+        font-weight: 300;
+        line-height: 1.2;
+        color: $color--white;
+        margin-bottom: 0;
+
+        @include media-query(tablet) {
+            @include font-size(xl);
+        }
+
+    }
+
+    &__body {
+        color: $color--white;
+
+        @include media-query(laptop) {
+            @include gutter(0, 0.25, 0.5, 0);
+            flex-basis: 70%;
+            min-width: 70%;
+            max-width: 70%;
+        }
+
+    }
+
+    &__text {
+        @include font-size(l);
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1.4;
+
+        @include media-query(tablet) {
+            @include font-size(xl);
+        }
+
+    }
+
+    &__actions {
+        @include gutter(0.5, 0, 0, 0);
+
+        @include media-query(laptop) {
+            @include gutter(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+    }
+
+}

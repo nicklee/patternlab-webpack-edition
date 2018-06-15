@@ -1,0 +1,17 @@
+.logo-showcase {
+    $root: &;
+    @include gutter(0, 0, 1, 0);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        @include font-size(m);
+        @include gutter(0, 0, 0.5, 0);
+        margin-bottom: 0;
+    }
+
+}

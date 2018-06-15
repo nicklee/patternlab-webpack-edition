@@ -1,0 +1,12 @@
+<div class="logo-showcase">
+    <div class="logo-showcase__container">
+        <div class="logo-showcase__header">
+            <h2 class="logo-showcase__heading">{{ title }}</h2>
+        </div>
+        <div class="logo-showcase__content">
+        {% for logos in items %}
+            {% include "@molecules/logo-item/logo-item.twig" with logos %}
+        {% endfor %}
+        </div>
+    </div>
+</div>

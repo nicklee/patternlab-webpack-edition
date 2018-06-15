@@ -1,0 +1,9 @@
+{
+    "title" : "Negative notification",
+    "text" : "Sorry there's been an error, please check your name field",
+    "modifier" : [
+        {
+            "class" : "negative"
+        }
+    ]
+}

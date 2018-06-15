@@ -1,0 +1,20 @@
+{
+    "title" : "Sorry.",
+    "template" : "error",
+    "introduction": "This page doesn't seem to exist, please try starting from our <a href='/'>homepage</a>, or use the search functionality",
+    "published" : false,
+    "pageHeadingModifier" : "full",
+    "breadcrumb" : {
+        "title" : "Breadcrumb",
+        "items" : [
+            {
+                "title" : "Home",
+                "href" : "#"
+            },
+            {
+                "title" : "Error",
+                "href" : "#"
+            }
+        ]
+    }
+}

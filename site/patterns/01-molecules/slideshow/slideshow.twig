@@ -1,0 +1,7 @@
+<div class="slideshow" >
+    <div class="slideshow__container owl-carousel js-slideshow">
+        {% for slides in items %}
+            {% include "@atoms/slideshow-item/slideshow-item.twig" with slides %}
+        {% endfor %}
+    </div>
+</div> <!-- /slideshow -->

@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    $App navigation
+\*------------------------------------*/
+
+.app-navigation {
+    @include gutter(1, 1, 1, 1);
+    overflow-y: scroll;
+    height: 100%;
+
+    @include media-query(tablet) {
+        @include gutter(2, 1, 1, 1);
+        overflow: auto;
+        height: auto;
+    }
+
+    &__audience-links {
+        @include gutter(0.5, 0, 0, 0);
+
+        @include media-query(tablet) {
+            @include gutter(2, 0, 0, 0);
+        }
+
+    }
+
+}

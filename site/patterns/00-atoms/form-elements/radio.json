@@ -1,0 +1,21 @@
+{
+    "type" : "radio",
+    "label" : "Radio label",
+    "placeholder" : "",
+    "name" : "",
+    "description" : "Test description",
+    "options" : [
+        {
+            "title" : "Yes",
+            "name" : "yes"
+        },
+        {
+            "title" : "No",
+            "name" : "no"
+        },
+        {
+            "title" : "Not applicable",
+            "name" : "na"
+        }
+    ]
+}

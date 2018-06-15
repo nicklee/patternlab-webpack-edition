@@ -1,0 +1,11 @@
+.sprite {
+
+    &--light {
+        fill: $color--white;
+    }
+
+    &--dark {
+        fill: $color--black;
+    }
+    
+}

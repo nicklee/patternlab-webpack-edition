@@ -1,0 +1,42 @@
+<div class="app {% if template %}template__{{ template }}{% endif %} {% if bodyModifier %}{{ bodyModifier }}{% endif %}">
+
+    <a class="app__skip" aria-label="Skip to content" href="#page-top">Skip to content</a>
+
+    {% include "atoms-sprites" %}
+
+    <header class="app__header" id="page-top">
+        {% include "@organisms/app/app-header/app-header.twig" %}
+    </header> <!-- /app__header -->
+
+    <main class="app__body">
+
+        {% if notification %}
+        <div class="app__notification">
+            {% include "@atoms/notification/notification.twig" with notification %}
+        </div>
+        {% endif %}
+
+        <div class="app__search">
+            {% include "@organisms/app/app-search/app-search.twig" %}
+        </div>
+
+        <div class="app__navigation">
+            {% include "@organisms/app/app-navigation/app-navigation.twig" %}
+        </div>
+
+        <div class="app__page">
+            <div class="page">
+                {% block app__page %}
+                {% endblock %}
+            </div>
+        </div>
+
+    </main> <!-- /app__body -->
+
+    <footer class="app__footer">
+        {% include "@organisms/app/app-footer/app-footer.twig" %}
+        {% include "@atoms/back-to-top/back-to-top.twig" %}
+        {% include "@atoms/cookie-warning/cookie-warning.twig" %}
+    </footer> <!-- /app__footer -->
+
+</div>

@@ -1,0 +1,21 @@
+{
+    "type" : "checkbox",
+    "label" : "Checkbox label",
+    "placeholder" : "",
+    "name" : "",
+    "description" : "",
+    "options" : [
+        {
+            "title" : "Yes",
+            "name" : "yes"
+        },
+        {
+            "title" : "No",
+            "name" : "no"
+        },
+        {
+            "title" : "Not applicable",
+            "name" : "na"
+        }
+    ]
+}

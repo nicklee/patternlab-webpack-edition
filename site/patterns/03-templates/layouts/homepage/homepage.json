@@ -1,0 +1,426 @@
+{
+    "title": "Home Page",
+    "template" : "homepage",
+    "hero": {
+        "text" : "We back new ideas to tackle the big challenges of our time.",
+        "image" : "../../../images/hero-water.jpg",
+        "thumbnail" : "../../../images/hero-water_thumb.jpg",
+        "bubbles" : {
+            "title" :  "bubble grid",
+            "items" : [
+                {
+                    "title" : "large yellow",
+                    "col" : "1",
+                    "row" : "2",
+                    "speed" : "22",
+                    "size" : "large",
+                    "colour" : "yellow",
+                    "margin" : "0",
+                    "options" : "half-right",
+                    "columnClass" : "start"
+                },
+                {
+                    "title" : "empty",
+                    "col" : "2",
+                    "row" : "2",
+                    "speed" : "-1",
+                    "size" : "small",
+                    "colour" : "orange",
+                    "margin" : "-10",
+                    "options" : "half-left",
+                    "columnClass" : "end"
+                },
+                {
+                    "title" : "purple",
+                    "col" : "3",
+                    "row" : "2",
+                    "speed" : "1",
+                    "size" : "xsmall",
+                    "colour" : "purple",
+                    "margin" : "200",
+                    "options" : "",
+                    "columnClass" : ""
+                },
+                {
+                    "title" : "medium yellow",
+                    "col" : "4",
+                    "row" : "2",
+                    "speed" : "-1",
+                    "size" : "medium",
+                    "colour" : "yellow",
+                    "margin" : "276",
+                    "options" : "",
+                    "columnClass" : "end"
+                },
+                {
+                    "title" : "small yellow",
+                    "col" : "5",
+                    "row" : "2",
+                    "speed" : "4",
+                    "size" : "xsmall",
+                    "colour" : "yellow",
+                    "margin" : "140",
+                    "options" : "",
+                    "columnClass" : ""
+                },
+                {
+                    "title" : "empty",
+                    "col" : "1",
+                    "row" : "1",
+                    "speed" : "-4",
+                    "size" : "",
+                    "colour" : "",
+                    "options" : "",
+                    "columnClass" : ""
+                },
+                {
+                    "title" : "empty",
+                    "col" : "2",
+                    "row" : "1",
+                    "speed" : "-1",
+                    "size" : "small",
+                    "colour" : "orange",
+                    "margin" : "-10",
+                    "options" : "half-left",
+                    "columnClass" : "end"
+                },
+                {
+                    "title" : "orange half",
+                    "col" : "3",
+                    "row" : "1",
+                    "speed" : "7",
+                    "size" : "small",
+                    "colour" : "orange",
+                    "options" : "half-left",
+                    "margin" : "-40",
+                    "columnClass" : "end"
+                },
+                {
+                    "title" : "purple half",
+                    "col" : "4",
+                    "row" : "1",
+                    "speed" : "7",
+                    "size" : "medium",
+                    "colour" : "purple",
+                    "options" : "half-right",
+                    "margin" : "-194",
+                    "columnClass" : "start"
+                },
+                {
+                    "title" : "pink",
+                    "col" : "5",
+                    "row" : "1",
+                    "speed" : "",
+                    "size" : "large",
+                    "colour" : "pink",
+                    "options" : "half-left",
+                    "margin" : "-280",
+                    "columnClass" : "end"
+                }
+            ]
+        }
+    },
+    "video" : {
+        "title" : "iframe",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702"
+            }
+        ]
+    },
+    "filters" : {
+        "title" : "Inspire me with",
+        "items" : [
+            {
+                "title" : "the latest content from Project name",
+                "nested" : [
+                    {
+                        "title" : "All the latest content from Project name",
+                        "safeTitle" : "*",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "News",
+                        "safeTitle" : ".category--news",
+                        "href" : "#category--news",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Data",
+                        "safeTitle" : ".category--data",
+                        "href" : "#category--data",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Toolkits",
+                        "safeTitle" : ".category--toolkits",
+                        "href" : "#category--toolkits",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Blogs",
+                        "safeTitle" : ".category--blogs",
+                        "href" : "#category--blogs",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Case studies",
+                        "safeTitle" : ".category--casestudies",
+                        "href" : "#category--casestudies",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Events",
+                        "safeTitle" : ".category--events",
+                        "href" : "#category--events",
+                        "class" : ""
+                    },
+                    {
+                        "title" : "Reports",
+                        "safeTitle" : ".category--reports",
+                        "href" : "#category--reports",
+                        "class" : ""
+                    }
+                ]
+            }
+        ]
+    },
+    "latest" : {
+        "title" : "",
+        "filterable" : true,
+        "items" : [
+            {
+                "title" : "Developing the new What Works Centre for Children’s Social Care",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "text" : "",
+                "image" : "../../../images/listing-image2.jpg",
+                "imageBg" : true,
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "23rd Nov"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "text" : "",
+                "image" : "../../../images/listing-image3.jpg",
+                "subCategory" : "category--blogs",
+                "sticky" : true,
+                "meta" : [
+                    {
+                        "title" : "Blog",
+                        "date" : "18th Oct"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--data js-col-width",
+                "meta" : [
+                    {
+                        "title" : "Data",
+                        "date" : "Health"
+                    }
+                ]
+            },
+            {
+                "title" : "Matching the crowd - Combining crowdfunding and institutional funding…",
+                "href" : "../04-pages-report-matching-the-crowd/04-pages-report-matching-the-crowd.html",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--reports",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "Health"
+                    }
+                ]
+            },
+            {
+                "title" : "Setting Our Sights: A strategy for maximising social impact",
+                "href" : "#",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--blogs",
+                "sticky" : true,
+                "meta" : [
+                    {
+                        "title" : "Blog",
+                        "date" : "18th July"
+                    }
+                ]
+            }
+        ]
+    },
+    "themes" : {
+        "title" : "Theme browser",
+        "items" : [
+            {
+                "title" : "Creative economy & culture",
+                "contentType" : "Our areas of work",
+                "count" : "1",
+                "href" : "#",
+                "theme" : "light",
+                "image" : "../../../images/browser-image_art.jpg",
+                "description" : "Growing the creative economy, and helping arts and cultural organisations thrive.",
+                "featureOne" : false,
+                "featureTwo" : [
+                    {
+                        "title": "Latest projects",
+                        "loadMore" : false,
+                        "items": [
+                            {
+                                "title" : "Arts and Heritage Matched Crowdfunding Pilot",
+                                "image" : "../../../images/project_1.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            },
+                            {
+                                "title" : "Digital Arts and Culture Accelerator",
+                                "image" : "../../../images/project_2.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            }
+                        ]
+                    }
+                ],
+                "bubbles" : false
+            },
+            {
+                "title" : "Education",
+                "contentType" : "Our areas of work",
+                "count" : "2",
+                "href" : "#",
+                "theme" : "dark",
+                "image" : "../../../images/browser-image_education.jpg",
+                "description" : "We back new ideas that foster the right skills for good jobs in the future.",
+                "featureOne" : false,
+                "featureTwo" : [
+                    {
+                        "title": "Latest projects",
+                        "loadMore" : false,
+                        "items": [
+                            {
+                                "title" : "Arts and Heritage Matched Crowdfunding Pilot",
+                                "image" : "../../../images/project_2.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            },
+                            {
+                                "title" : "Digital Arts and Culture Accelerator",
+                                "image" : "../../../images/project_1.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            }
+                        ]
+                    }
+                ],
+                "bubbles" : false
+            },
+            {
+                "title" : "Government Innovation",
+                "contentType" : "Our areas of work",
+                "count" : "3",
+                "href" : "#",
+                "theme" : "light",
+                "image" : "../../../images/browser-image_government-innovation.jpg",
+                "description" : "We back new ideas to help governments reform public services through smarter use of people, data and technology.",
+                "featureOne" : false,
+                "featureTwo" : [
+                    {
+                        "title": "Latest projects",
+                        "loadMore" : false,
+                        "items": [
+                            {
+                                "title" : "Arts and Heritage Matched Crowdfunding Pilot",
+                                "image" : "../../../images/project_1.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            },
+                            {
+                                "title" : "Digital Arts and Culture Accelerator",
+                                "image" : "../../../images/project_2.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            }
+                        ]
+                    }
+                ],
+                "bubbles" : false
+            },
+            {
+                "title" : "Health",
+                "contentType" : "Our areas of work",
+                "count" : "4",
+                "href" : "#",
+                "theme" : "light",
+                "image" : "../../../images/browser-image_health.jpg",
+                "description" : "We back new ideas for creating a people-powered, data-driven health and care system.",
+                "featureOne" : false,
+                "featureTwo" : [
+                    {
+                        "title": "Latest projects",
+                        "loadMore" : false,
+                        "items": [
+                            {
+                                "title" : "Arts and Heritage Matched Crowdfunding Pilot",
+                                "image" : "../../../images/project_2.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            },
+                            {
+                                "title" : "Digital Arts and Culture Accelerator",
+                                "image" : "../../../images/project_1.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            }
+                        ]
+                    }
+                ],
+                "bubbles" : false
+            },
+            {
+                "title" : "Innovation Policy",
+                "contentType" : "Our areas of work",
+                "count" : "5",
+                "href" : "#",
+                "theme" : "dark",
+                "image" : "../../../images/browser-image_innovation.jpg",
+                "description" : "We back new ideas that help governments, at a national, regional and city level, to create the conditions for innovations that grow the economy and benefit everyone.",
+                "featureOne" : false,
+                "featureTwo" : [
+                    {
+                        "title": "Latest projects",
+                        "loadMore" : false,
+                        "items": [
+                            {
+                                "title" : "Arts and Heritage Matched Crowdfunding Pilot",
+                                "image" : "../../../images/project_1.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            },
+                            {
+                                "title" : "Digital Arts and Culture Accelerator",
+                                "image" : "../../../images/project_2.jpg",
+                                "text" : "",
+                                "href" : "#"
+                            }
+                        ]
+                    }
+                ],
+                "bubbles" : false
+            }
+        ]
+    }
+}

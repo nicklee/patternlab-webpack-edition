@@ -1,0 +1,74 @@
+.pagination-item {
+    @include font-size(default);
+    @include gutter(0, 0.125, 0, 0.125);
+    $root: &;
+    font-weight: 500;
+    text-align: center;
+
+    @media only screen and ( min-device-pixel-ratio: 1.25),
+        only screen and ( min-resolution: 200dpi),
+        only screen and ( min-resolution: 1.25dppx) {
+            font-weight: 300;
+    }
+
+    &--prev,
+    &--next {
+        @include gutter(0, 0.25, 0, 0.25);
+        font-weight: 500;
+
+        #{$root}__link {
+            color: $color--meta;
+
+            &:hover {
+                color: $color--link-hover;
+            }
+
+        }
+
+    }
+
+    &--active {
+
+        #{$root}__link {
+            background-color: $color--primary;
+            color: $color--white;
+            border-color: $color--black;
+
+            &:hover {
+                cursor: default;
+                transform: translate3d(0, 0, 0);
+                background-color: $color--primary;
+                color: $color--white;
+                border-color: $color--black;
+            }
+
+        }
+
+    }
+
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    &__link {
+        @include gutter(0, 0.25, 0, 0.25);
+        display: block;
+        text-decoration: none;
+        color: $color--link;
+        border: 2px solid $color--border;
+        // sass-lint:disable indentation
+        transition: color $default-transition-speed ease 0s,
+                    transform $default-transition-speed ease 0s,
+                    border-color $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        &:hover {
+            transform: translate3d(0, -1px, 0);
+            color: $color--link-hover;
+            border-color: $color--link-hover;
+        }
+
+    }
+
+}

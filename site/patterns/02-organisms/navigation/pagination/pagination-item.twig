@@ -1,0 +1,5 @@
+<div class="pagination-item {% for item in modifiers %}{{ item.class }} {% endfor %}">
+    {% if href %}<a href="{{ href }}" class="pagination-item__link">{% endif %}
+        {{ title }}
+    {% if href %}</a>{% endif %}
+</div>

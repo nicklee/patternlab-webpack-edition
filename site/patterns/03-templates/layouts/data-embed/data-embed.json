@@ -1,0 +1,14 @@
+{
+    "title" : "Data embed",
+    "template" : "data",
+    "bodyModifier" : "",
+    "headerBg" : "",
+    "iframe" : {
+        "title" : "iframe",
+        "items" : [
+            {
+                "source" : "http://data-viz.Project name.org.uk/bfi-onscreen/index.html"
+            }
+        ]
+    }
+}

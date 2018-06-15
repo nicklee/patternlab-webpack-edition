@@ -1,0 +1,35 @@
+.priority-nav {
+
+    &__menu {
+        display: none;
+
+        @include media-query(laptop) {
+            display: flex;
+        }
+
+        .headroom--not-top &,
+        .template__data & {
+            display: none;
+        }
+
+    }
+
+    &__full-link {
+        display: block;
+
+        @include media-query(laptop) {
+            display: none;
+        }
+
+        .headroom--not-top &,
+        .template__data & {
+            display: block;
+        }
+
+        .header--light & {
+            border-color: $color--off-black;
+        }
+
+    }
+
+}

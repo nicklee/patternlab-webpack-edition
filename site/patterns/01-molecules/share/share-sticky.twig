@@ -1,0 +1,12 @@
+<div class="share share--sticky js-sticky">
+    <div class="share__container">
+        <div class="share__toggle">
+            {{ title }}
+        </div>
+        <div class="share__options">
+            {% for shareItems in items %}
+                {% include "@atoms/share-item/share-item.twig" with shareItems %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    $Base
+\*------------------------------------*/
+
+// Box Sizing
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Prevent text size change on orientation change.
+// sass-lint:disable no-vendor-prefixes
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+// Prevent empty space below images appearing
+img,
+svg {
+    vertical-align: top;
+}
+
+html,
+body {
+    background-color: $color--white;
+
+    &.fixed {
+        overflow: hidden;
+    }
+
+}
+
+body {
+    font-family: $font--secondary;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    color: $base-font-color;
+    -webkit-font-smoothing: antialiased;
+}
+
+p,
+ul,
+ol {
+    margin: 0 0 ($grid);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    margin-bottom: ($grid);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}

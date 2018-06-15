@@ -1,0 +1,98 @@
+.search-toggle {
+    $root: &;
+
+    &__container {
+        position: relative;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__icon {
+        fill: $color--primary;
+        // sass-lint:disable indentation
+        transition: fill $default-transition-speed ease 0s,
+                    opacity $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        .header--light & {
+            fill: $color--black;
+        }
+
+        .header--dark & {
+            fill: $color--white;
+        }
+
+    }
+
+    &__icon-close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        // sass-lint:disable indentation
+        transition: fill $default-transition-speed ease 0s,
+                    opacity $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        .header--dark & {
+            fill: $color--white;
+        }
+
+    }
+
+    &__link {
+        display: block;
+        opacity: 1;
+        transition: opacity $default-transition-speed ease 0s;
+
+        &.active,
+        &:focus,
+        &:hover {
+            outline: 0;
+
+            #{$root}__icon {
+                fill: $color--black;
+
+                .header--light & {
+                    fill: $color--black;
+                }
+
+                .header--dark & {
+                    fill: $color--white;
+                }
+
+                .header--dark &,
+                .header--light & {
+                    opacity: 0.5;
+                }
+
+            }
+
+        }
+
+        &.active {
+
+            #{$root}__icon {
+                opacity: 0;
+
+                .header--dark &,
+                .header--light & {
+                    opacity: 0;
+                }
+
+            }
+
+            #{$root}__icon-close {
+                opacity: 1;
+            }
+
+        }
+
+        .app-search & {
+            opacity: 1;
+        }
+
+    }
+
+
+}

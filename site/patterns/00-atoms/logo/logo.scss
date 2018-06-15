@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $Logo
+\*------------------------------------*/
+
+.logo {
+    $root: &;
+    display: block;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: auto;
+        // sass-lint:disable indentation
+        transition: opacity $default-transition-speed ease 0s,
+                    height $default-transition-speed ease 0s,
+                    width $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        .headroom--not-top & {
+            top: 0;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+    }
+
+}

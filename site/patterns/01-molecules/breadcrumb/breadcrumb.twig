@@ -1,0 +1,7 @@
+<div class="breadcrumb">
+    <div class="breadcrumb__container">
+        {% for item in items %}
+            {% include "@atoms/breadcrumb-item/breadcrumb-item.twig" with item %}
+        {% endfor %}
+    </div>
+</div>

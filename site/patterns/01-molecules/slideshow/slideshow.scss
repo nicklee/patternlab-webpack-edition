@@ -1,0 +1,60 @@
+.slideshow {
+    margin-bottom: ($grid * 2.5);
+    width: 100%;
+    position: relative;
+
+    &__container {
+
+        // Ridiculous nesting to override owl carousels stupid css rules
+        &.owl-carousel {
+
+            .owl-nav {
+                position: absolute;
+                bottom: ($grid);
+                right: 0;
+                display: flex;
+
+                .owl-prev,
+                .owl-next {
+                    z-index: 1;
+                    background-color: transparent;
+                    background-size: ($grid * 1.5);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    width: ($grid * 1.25);
+                    height: ($grid);
+                    text-indent: -9999px;
+                    overflow: hidden;
+
+                    &.disabled {
+                        opacity: 0.5;
+                    }
+
+                }
+
+                .owl-prev {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.2 6.5L9.6 12l5.6 5.6-.4.4-6-6 6-6 .4.5z'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+
+                    &:hover {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.2 6.4L9.6 12l5.6 5.6-.4.4-6-6 6-6 .4.4z' fill='%23fab721'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+                    }
+
+                }
+
+                .owl-next {
+                    background-position: right center;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.8 17.6l5.6-5.6-5.6-5.5.4-.5 6 6-6 6-.4-.4z'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+
+                    &:hover {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8.8 17.6l5.6-5.6-5.6-5.6.4-.4 6 6-6 6-.4-.4z' fill='%23fab721'/%3E%3Cpath d='M0-.8h24v24H0v-24z' fill='none'/%3E%3C/svg%3E");
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

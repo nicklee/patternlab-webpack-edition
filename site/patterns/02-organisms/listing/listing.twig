@@ -1,0 +1,25 @@
+<div class="listing {% for item in listingModifier %}listing--{{ item.class }} {% endfor %}">
+
+    {% include "@molecules/listing-header/listing-header.twig" %}
+
+    <div class="listing__container {% if filterable %}js-filterable{% endif %}">
+
+        {% for listing in items %}
+            {% include "@molecules/listing-item/listing-item.twig" with listing %}
+        {% endfor %}
+
+    </div>
+
+    {% if loadMoreOn %}
+        {% if loadMore %}
+            {% include "@atoms/load-more/load-more.twig" with loadMore only %}
+        {% endif %}
+    {% endif %}
+
+    {% if paginationOn %}
+        {% if pagination %}
+            {% include "@organisms/navigation/pagination/pagination.twig" with pagination only %}
+        {% endif %}
+    {% endif %}
+
+</div> <!-- /listing -->

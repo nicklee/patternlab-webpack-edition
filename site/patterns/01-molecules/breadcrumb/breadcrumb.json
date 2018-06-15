@@ -1,0 +1,17 @@
+{
+    "title" : "Breadcrumb",
+    "items" : [
+        {
+            "title" : "Home",
+            "href" : "#"
+        },
+        {
+            "title" : "Section title",
+            "href" : "#"
+        },
+        {
+            "title" : "Page title",
+            "href" : ""
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<div class="app-footer">
+    <div class="app-footer__container">
+        <div class="app-footer__icons">
+            {% include "@molecules/social-links/social-links.twig" %}
+            {% include "@molecules/footer-links/footer-links.twig" %}
+        </div>
+        {% if footerCopyright %}
+        <div class="footer-link-item">
+            &copy; {{ footerCopyright }}
+        </div>
+        {% endif %}
+    </div>
+</div>

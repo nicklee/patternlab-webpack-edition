@@ -1,0 +1,14 @@
+<div class="share">
+    <div class="share__container">
+        {% if title %}
+            <div class="share__toggle">
+                {{ title }}
+            </div>
+        {% endif %}
+        <div class="share__options">
+            {% for shareItems in items %}
+                {% include "@atoms/share-item/share-item.twig" with shareItems %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

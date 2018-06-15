@@ -1,0 +1,10 @@
+<div class="select__container">
+    <svg class="select__icon" width="42px" height="42px">
+        <use xlink:href="#arrow-down"></use>
+    </svg>
+    <select name="{{ item.name }}">
+        {% for item in options %}
+            <option>{{ item.title }}</option>
+        {% endfor %}
+    </select>
+</div>

@@ -1,0 +1,29 @@
+{
+    "dataFull" : {
+        "title" : "Creativity map",
+        "modifier" : "full",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702",
+                "height" : "750"
+            }
+        ]
+    },
+    "dataBanner" : {
+        "title" : "Antimicrobial resistance",
+        "description" : "<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702"
+            }
+        ]
+    },
+    "data" : {
+        "title" : "Clubbing map",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702"
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+<div class="notification {% for item in modifier %}notification--{{ item.class }} {% endfor %}">
+    <div class="notification__container">
+        <div class="notification__content">
+        {% if text %}
+            <p class="notification__text">
+                {{ text }}
+            </p>
+        {% endif %}
+        </div>
+        <div class="notification__dismiss js-notification-dismiss">
+            <svg class="notification__dismiss-icon" width="28" height="28">
+                <use xlink:href="#close" />
+            </svg>
+        </div>
+    </div>
+</div>

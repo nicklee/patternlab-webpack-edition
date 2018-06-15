@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: ($grid);
+}
+
+thead {
+    @include font-size(m);
+    font-weight: 700;
+
+    th {
+        @include gutter(0.5, 0.5, 0.25, 0.5);
+        color: $color--black;
+    }
+
+}
+
+tbody {
+    @include font-size(default);
+    font-weight: 500;
+
+    td {
+        @include gutter(0.25, 0.5, 0.25, 0.5);
+        color: $color--off-black;
+    }
+
+}
+
+td,
+th {
+    border: 1px solid $color--border-light;
+    text-align: left;
+}

@@ -1,0 +1,14 @@
+<div class="form__action">
+    <button class="form__btn btn btn--transparent btn--icon">
+        <span class="btn__container">
+            <div class="form__btn-label btn__label">
+                {{ item.title }}
+            </div>
+            {% if item.icon %}
+            <svg class="form__btn-icon btn__icon" width="24" height="24">
+                <use xlink:href="#{{ item.icon }}" />
+            </svg>
+            {% endif %}
+        </span>
+    </button>
+</div>

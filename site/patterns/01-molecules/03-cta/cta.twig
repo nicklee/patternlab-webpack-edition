@@ -1,0 +1,24 @@
+<div class="cta">
+    <div class="cta__container">
+        <div class="cta__body">
+            <div class="cta__header">
+                <h2 class="cta__heading">{{ title }}</h2>
+            </div>
+            <div class="cta__content">
+                <p class="cta__text">{{ text }}</p>
+            </div>
+        </div>
+        <div class="cta__actions">
+            <div class="cta-action">
+                <a class="cta-action__link btn btn--transparent btn--icon" href="{{ link }}">
+                    <div class="cta-action__label">
+                        {{ action }}
+                    </div>
+                    <svg class="cta-action__icon btn__icon btn__icon--large" width="42px" height="42px">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

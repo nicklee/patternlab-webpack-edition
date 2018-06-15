@@ -1,0 +1,38 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "globals": {
+        "someGlobalVariable": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "react/prop-types": [2],
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": 0
+    }
+}

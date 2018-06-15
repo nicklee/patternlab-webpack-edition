@@ -1,0 +1,71 @@
+<div class="listing-item {% if image %}listing-item--image{% endif %} {% if imageBg %}listing-item--image-bg{% endif %} js-filterable__item {{ subCategory }} {% if sticky %}listing-item--featured{% endif %} js-slide-in">
+    <div class="listing-item__container" >
+
+        {% if href %}
+        <a class="listing-item__link" href="{{ href }}" {% if imageBg %}style="background-image: url({{ image }})"{% endif %}>
+        {% endif %}
+
+            {% if image and not imageBg %}
+                <div class="listing-item__image-container">
+                    {% if stage %}
+                    <div class="stages">
+                        <div class="stages__container">
+                            {% for item in stage %}
+                                <div class="stages__item">{{ item.title }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    <img class="listing-item__image" src="{{ image }}" alt="" />
+                </div>
+            {% endif %}
+
+            <div class="listing-item__text-container {% if stage and imageBg %}listing-item__text-container--stage{% endif %}">
+
+                {% if stage and imageBg or stage and not image %}
+                <div class="stages">
+                    <div class="stages__container">
+                        {% for item in stage %}
+                            <div class="stages__item">{{ item.title }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="listing-item__header">
+                    <h2 class="listing-item__heading">{{ title|raw }}</h2>
+                </div>
+
+                {% if text %}
+                    <p class="listing-item__text">{{ text }}</p>
+                {% endif %}
+
+                {% if meta %}
+                    <div class="listing-item__meta meta">
+                        {% for item in meta %}
+                            <div class="listing-item__meta-item meta-item">
+                                {% if item.icon %}
+                                    <svg class="listing-item__icon" width="21px" height="21px">
+                                        <use xlink:href="#{{ item.icon }}"></use>
+                                    </svg>
+                                {% endif %}
+                                {% if item.title %}
+                                    <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
+                                {% endif %}
+                                {% if item.date %}
+                                    <div class="listing-item__meta-description meta-item__description">{{ item.date }}</div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </div>
+
+        {% if href %}
+        </a>
+        {% endif %}
+
+    </div>
+
+</div>

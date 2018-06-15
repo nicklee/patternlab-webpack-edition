@@ -1,0 +1,18 @@
+<div class="carousel">
+    <div class="carousel__container">
+        <div class="listing {% for item in listingModifier %}listing--{{ item.class }} {% endfor %}">
+
+            {% include "@molecules/listing-header/listing-header.twig" %}
+
+            <div class="listing__container owl-carousel {% for item in carouselClass %}{{ item.class }}{% endfor %}">
+
+                {% for listing in items %}
+                    {% include "@molecules/listing-item/listing-item.twig" with listing %}
+                {% endfor %}
+
+            </div>
+
+        </div> <!-- /listing -->
+
+    </div>
+</div>

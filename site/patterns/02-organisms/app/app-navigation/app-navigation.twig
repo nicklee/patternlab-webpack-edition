@@ -1,0 +1,17 @@
+<nav class="app-navigation" role="navigation">
+    <div class="priority-nav__menu__item">
+        <a class="priority-link" href="/">
+            <span class="priority-link__label">
+                Home
+            </span>
+        </a>
+    </div>
+    {% for item in priorityNavigation %}
+        {% include "@molecules/links/priority-link/priority-link.twig" with item %}
+    {% endfor %}
+    <div class="app-navigation__audience-links">
+        {% for item in audienceNavigation %}
+            {% include "@molecules/links/priority-link/priority-link.twig" with item %}
+        {% endfor %}
+    </div>
+</nav>

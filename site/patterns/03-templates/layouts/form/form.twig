@@ -1,0 +1,55 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+
+        <div class="page__content-container">
+
+            <div class="page__primary-content page__primary-content--centered">
+
+                {% if breadcrumb %} 
+                    <div class="page-heading__breadcrumb">
+                        {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                    </div>
+                {% endif %}
+
+                {% if title %}
+                    <h1 class="page-heading__heading">{{ title }}</h1>
+                {% endif %}
+
+                {% if introduction %}
+                    <div class="page-heading__introduction">
+                        {% include "@atoms/introduction/introduction.twig" %}
+                    </div>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="page__content">
+
+        {% if overviewNav %}
+            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+        {% endif %}
+
+        <div class="page__content-container">
+
+            <div class="page__primary-content page__primary-content--centered">
+
+                <form class="form form--standard">
+                    {% if form %}
+                        {% include "@molecules/form/form-builder.twig" with form %}
+                    {% endif %}
+                </form>
+
+            </div> <!-- /page__primary-content -->
+
+        </div> <!-- /page__content-container -->
+
+    </div> <!-- /page__content -->
+
+{% endblock %}

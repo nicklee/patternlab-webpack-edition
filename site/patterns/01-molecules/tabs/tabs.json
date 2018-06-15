@@ -1,0 +1,15 @@
+{
+    "title" : "Tabs",
+    "items" : [
+        {
+            "title" : "Upcoming events",
+            "class" : "tab-item--active",
+            "href" : "#"
+        },
+        {
+            "title" : "Past events",
+            "class" : "",
+            "href" : "#"
+        }
+    ]
+}

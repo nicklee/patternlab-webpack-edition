@@ -1,0 +1,168 @@
+/*------------------------------------*\
+    $PATTERNLAB
+    Override styles for styleguide
+\*------------------------------------*/
+
+// sass-lint:disable-all
+
+// Welcome area
+.welcome-demo {
+    margin-top: 20px;
+
+    p {
+        @include font-size(l);
+        margin-top: 0;
+    }
+
+}
+
+#viewall-atoms-welcome {
+    display: none;
+}
+
+#sg-patterns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 !important;
+
+    .sg-pattern-category {
+        flex-basis: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+
+        @include media-query(tablet) {
+            flex-basis: 20%;
+            min-width: 20%;
+        }
+
+        & + .sg-pattern {
+            margin-left: 0 !important;
+
+            @include media-query(tablet) {
+                @include gutter(1, 1, 1, 0);
+                border-top: 2px solid $color--border-light;
+            }
+
+        }
+
+    }
+
+    .sg-pattern {
+        @include gutter(0, 1, 1, 1);
+        flex-basis: 100%;
+        min-width: 100%;
+
+        @include media-query(tablet) {
+            @include gutter(0, 1, 1, 0);
+            flex-basis: 80%;
+            min-width: 80%;
+            margin: 0 0 0 20%;
+        }
+
+        &:first-child {
+            margin: 0;
+        }
+
+    }
+
+    .sg-pattern-head {
+        @include gutter(0, 0, 1, 0);
+        font-weight: 500;
+    }
+
+    .sg-pattern-extra {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+    }
+
+    .sg-pattern-category-title {
+        @include gutter(1, 1, 1, 1);
+        @include font-size(l);
+        border-top: 2px solid $color--border-light;
+        background-color: transparent !important;
+        font-weight: 300;
+        color: $color--black;
+        margin-bottom: 0;
+
+        a {
+            color: $color--black !important;
+        }
+
+    }
+
+    #atoms-welcome {
+        @include gutter(0, 0, 0, 0);
+        margin: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+        min-width: 100%;
+
+        .sg-pattern-head {
+            display: none;
+        }
+
+        .sg-pattern-extra {
+            border: 0;
+        }
+
+        .sg-pattern-example {
+            @include gutter(1, 1, 1, 1);
+            background-color: $color--white;
+        }
+
+    }
+
+}
+
+.sg-main {
+
+    // Add anything that shouldn't be displayed in the patternlibrary
+    #viewall-atoms-sprites,
+    #atoms-sprites,
+    #viewall-atoms-smooth-scroll,
+    #molecules-browser-item,
+    #viewall-molecules-browser-item,
+    #organisms-app-navigation {
+        display: none;
+    }
+
+
+    // Add all fixed items here, to ensure they don't overlay the pattern libary
+    .fixed-message,
+    .cookie,
+    .back-to-top,
+    .progress-bar,
+    .overview-bar,
+    .fixed-nav,
+    .app-header,
+    #organisms-audience-nav .priority-nav__menu,
+    .breadcrumb__item:first-child,
+    #atoms-video .iframe__item,
+    .notification {
+        display: block !important;
+        position: static !important;
+    }
+
+    // Add any hidden items that you want to show
+    .back-to-top,
+    .share--sticky {
+        opacity: 1;
+    }
+
+}
+
+.sg-header {
+    @include gutter(0, 1, 0, 1);
+}
+
+.sg-controls {
+    @include gutter(0, 1, 0, 1);
+}
+
+// sass-lint:enddisable

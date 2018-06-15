@@ -1,0 +1,17 @@
+<div class="filters">
+    <div class="filters__container">
+        <div class="filters__content" data-filter-type="content-type">
+            {% if title %}
+            <div class="filters__header">
+                <h2 class="filters__heading">{{ title }}</h2>
+            </div>
+            {% endif %}
+            {% if date %}
+                {% include "@molecules/date-filter/date-filter.twig" %}
+            {% endif %}
+            {% for filters in items %}
+                {% include "@molecules/filter-item/filter-item.twig" with filters %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

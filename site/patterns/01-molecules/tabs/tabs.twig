@@ -1,0 +1,12 @@
+<div class="tabs js-tabs" {% if modifier %}tabs--{{ modifier }}{% endif %}>
+    <div class="tabs__container">
+        {% if title %}
+        <div class="tabs__label">
+            {{ title }}
+        </div>
+        {% endif %}
+        {% for tab in items %}
+            {% include "@atoms/tab-item/tab-item.twig" with tab %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,109 @@
+{
+    "title" : "",
+    "filterable" : true,
+    "paginationOn" : true,
+    "items" : [
+        {
+            "title" : "Health Lab - practical work on health and ageing",
+            "href" : "#",
+            "text" : "",
+            "image" : "../../../images/listing-image4.jpg",
+            "subCategory" : "category--news",
+            "meta" : [
+                {
+                    "title" : "News",
+                    "date" : "23rd Nov"
+                }
+            ]
+        },
+        {
+            "title" : "Mental health: A snapshot of trends and technologies",
+            "href" : "#",
+            "text" : "",
+            "image" : "../../../images/listing-image2.jpg",
+            "subCategory" : "category--blogs",
+            "meta" : [
+                {
+                    "title" : "Blog",
+                    "date" : "18th Oct"
+                }
+            ]
+        },
+        {
+            "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+            "href" : "#",
+            "text" : "",
+            "image" : "../../../images/listing-image.jpg",
+            "subCategory" : "category--data js-col-width",
+            "meta" : [
+                {
+                    "title" : "Data"
+                }
+            ]
+        },
+        {
+            "title" : "Matching the crowd",
+            "href" : "../04-pages-report-matching-the-crowd/04-pages-report-matching-the-crowd.html",
+            "text" : "",
+            "image" : "../../../images/listing-image2.jpg",
+            "subCategory" : "category--reports",
+            "meta" : [
+                {
+                    "title" : "Report"
+                }
+            ]
+        },
+        {
+            "title" : "Setting Our Sights: A strategy for maximising social impact",
+            "href" : "#",
+            "text" : "",
+            "image" : "../../../images/listing-image3.jpg",
+            "subCategory" : "category--blogs",
+            "sticky" : true,
+            "meta" : [
+                {
+                    "title" : "Blog",
+                    "date" : "18th July"
+                }
+            ]
+        },
+        {
+            "title" : "Setting Our Sights: A strategy for maximising social impact",
+            "href" : "#",
+            "text" : "",
+            "image" : "../../../images/listing-image2.jpg",
+            "subCategory" : "category--data js-col-width",
+            "meta" : [
+                {
+                    "title" : "Data"
+                }
+            ]
+        },
+        {
+            "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+            "href" : "#",
+            "text" : "",
+            "image" : "",
+            "subCategory" : "category--reports",
+            "meta" : [
+                {
+                    "title" : "Report"
+                }
+            ]
+        },
+        {
+            "title" : "Matching the crowd - Combining crowdfunding and institutional funding…",
+            "href" : "../04-pages-report-matching-the-crowd/04-pages-report-matching-the-crowd.html",
+            "text" : "",
+            "image" : "",
+            "subCategory" : "category--blogs",
+            "sticky" : true,
+            "meta" : [
+                {
+                    "title" : "Blog",
+                    "date" : "18th July"
+                }
+            ]
+        }
+    ]
+}

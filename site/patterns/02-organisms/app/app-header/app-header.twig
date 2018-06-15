@@ -1,0 +1,36 @@
+{% if progressBar %}
+    {% include "@atoms/progress-bar/progress-bar.twig" %}
+{% endif %}
+
+<div class="app-header" {% if headerBg %}style="background-color: {{ headerBg }};"{% endif %}>
+
+    <div class="app-header__container">
+
+        <div class="app-header__content">
+
+            <div class="app-header__search-toggle">
+                {% include "@atoms/search-toggle/search-toggle.twig" %}
+            </div>
+
+            <div class="app-header__home-link">
+                {% include "@molecules/links/home-link/home-link.twig" %}
+            </div>
+
+            <div class="app-header__nav-container">
+
+                <div class="app-header__audience-navigation">
+                    {% include "@organisms/navigation/audience-nav/audience-nav.twig" %}
+                    {% include "@atoms/search-toggle/search-toggle.twig" %}
+                </div>
+
+                <div class="app-header__navigation">
+                    {% include "@organisms/navigation/priority-nav/priority-nav.twig" %}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

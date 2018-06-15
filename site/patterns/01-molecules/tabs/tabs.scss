@@ -1,0 +1,44 @@
+.tabs {
+    $root: &;
+    border-bottom: 1px solid $color--border-light;
+    background-color: rgba($color--border-light, 0.2);
+
+    &__container {
+        @include gutter(0.5, 0, 0, 0);
+        @include aligner;
+        display: flex;
+    }
+
+    &__label {
+        @include gutter(0, 0.5, 0, 0);
+    }
+
+    &__content {
+        display: none;
+
+        &--current {
+            display: inherit;
+        }
+
+    }
+
+    .template__listing & {
+
+        #{$root}__container {
+            @include gutter(0.5, 1, 0, 1);
+            position: relative;
+            max-width: 1000px;
+
+            @include media-query(tablet) {
+                flex-direction: row;
+            }
+
+            @include media-query(laptop) {
+                @include gutter(0.5, 0, 0, 0);
+            }
+
+        }
+
+    }
+
+}

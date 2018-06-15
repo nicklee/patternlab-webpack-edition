@@ -1,0 +1,68 @@
+.notification {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $color--white;
+    opacity: 1;
+    background-color: $color--tertiary;
+    animation: fadeinup 1s;
+    transition: opacity $default-transition-speed ease 0s;
+
+    &--negative {
+        background-color: $color--primary;
+    }
+
+    &--inactive {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__container {
+        @include aligner;
+        @include gutter(0.25, 1, 0.25, 1);
+        display: flex;
+        justify-content: space-between;
+
+        @include media-query(wide) {
+            @include gutter(0.25, 0, 0.25, 0);
+        }
+
+    }
+
+    &__text {
+        @include font-size(default);
+        margin-bottom: 0;
+    }
+
+    &__dismiss-icon {
+        cursor: pointer;
+        fill: $color--white;
+        // sass-lint:disable indentation
+        transition: fill $default-transition-speed ease 0s,
+                    transform $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        &:hover {
+            fill: $color--secondary;
+            transform: translateY(-1px);
+        }
+
+    }
+
+    @keyframes fadeinup {
+
+        from {
+            opacity: 0;
+            transform: translate3d(0, -200%, 0);
+        }
+
+        to   {
+            opacity: 1;
+            transform: translate3d(0, 0%, 0);
+        }
+
+    }
+
+}

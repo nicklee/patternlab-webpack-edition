@@ -1,0 +1,53 @@
+.back-to-top {
+    display: none;
+    margin-bottom: ($grid);
+
+    @include media-query(laptop) {
+        position: fixed;
+        display: block;
+        z-index: 11; // ensure it's more than the cookie notice (10)
+        bottom: 0;
+        right: ($grid);
+        margin-bottom: 0;
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+        // sass-lint:disable indentation
+        transition: transform $default-transition-speed ease 0s,
+                    opacity $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+    }
+
+    &.stuck {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    &__container {
+        @include font-size(xxs);
+        display: flex;
+        align-items: center;
+        background-color: $color--primary;
+        border-radius: ($default-border-radius / 4) ($default-border-radius / 4) 0 0;
+        border: 1px solid rgba($color--white, 0.2);
+        border-bottom: 0;
+        padding: ($grid / 4) ($grid / 2);
+        text-decoration: none;
+        color: $color--white;
+        transition: background-color $default-transition-speed ease 0s;
+
+        &:hover {
+            color: $color--white;
+            background-color: $color--link;
+        }
+
+    }
+
+    &__label {
+        display: none;
+    }
+
+    &__icon {
+        fill: $color--white;
+    }
+
+}

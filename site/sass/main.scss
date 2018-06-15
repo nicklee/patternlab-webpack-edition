@@ -1,0 +1,23 @@
+/*------------------------------------*\
+	$VENDOR
+\*------------------------------------*/
+
+@import 'vendor/vendor';
+
+/*------------------------------------*\
+	$Abstracts
+\*------------------------------------*/
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/fonts';
+@import 'abstracts/base';
+@import 'abstracts/patternlab';
+
+/*------------------------------------*\
+	$Patterns
+\*------------------------------------*/
+
+// sass-lint:disable clean-import-paths
+@import '../patterns/**/*.scss';
+// sass-lint:enddisable

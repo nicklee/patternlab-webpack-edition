@@ -1,0 +1,21 @@
+.footer-links {
+    display: flex;
+    align-items: center;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include media-query(tablet) {
+            @include gutter(0, 0, 0, 0.5);
+        }
+
+        @include media-query(laptop) {
+            flex-direction: row;
+        }
+
+    }
+
+}

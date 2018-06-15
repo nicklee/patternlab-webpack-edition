@@ -1,0 +1,57 @@
+.tab-item {
+    @include gutter(0.1, 0.2, 0.1, 0);
+    @include font-size(s);
+    $root: &;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    // sass-lint:disable no-important
+    padding-right: ($grid / 2) !important;
+    padding-left: ($grid / 2) !important;
+    // sass-lint:disable
+    font-weight: 700;
+    color: $color--link;
+    background-color: rgba($color--warm-grey6, 0.4);
+    border-top: 1px solid $color--border-light;
+    border-left: 1px solid $color--border-light;
+
+    &:last-child {
+        border-right: 1px solid $color--border-light;
+    }
+
+    &:hover,
+    &--active {
+        color: $color--link-hover;
+        background-color: $color--white;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -1px;
+            left: -1px;
+            bottom: -1px;
+            height: 1px;
+            background-color: $color--white;
+        }
+
+    }
+
+    &:hover {
+        background-color: rgba($color--white, 0.5);
+
+        &::after {
+            background-color: rgba($color--white, 0.5);
+        }
+
+    }
+
+    &--active {
+        cursor: default;
+
+        &:hover {
+            background-color: $color--white;
+        }
+
+    }
+
+}

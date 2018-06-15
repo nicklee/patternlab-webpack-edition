@@ -1,0 +1,104 @@
+.cookie {
+    @include gutter(0, 0.5, 0.5, 0.5);
+    $root: &;
+    display: none; // Doesn't display unless there isn't a cookie
+    position: fixed;
+    z-index: 13;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    transition: transform $default-transition-speed ease 0s;
+
+    // Applied if cookie just added
+    &.inactive {
+        display: block;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    &.active {
+        display: block;
+        transform: translate3d(0, 0, 0);
+    }
+
+    &__container {
+        @include font-size(xxs);
+        border: 1px solid $color--border-light;
+        max-width: ($grid * 36);
+        margin: 0 auto;
+        line-height: 1.4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        color: $color--black;
+        background-color: $color--white;
+        border-radius: 5px;
+
+        @include media-query(tablet) {
+            flex-wrap: nowrap;
+        }
+        @include media-query(laptop) {
+            @include font-size(xs);
+        }
+
+    }
+
+    &__message {
+        @include gutter(0.25, 0.5, 0.25, 0.5);
+        flex-basis: 100%;
+        flex-grow: 1;
+
+        @include media-query(tablet) {
+            flex-basis: auto;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__action {
+        flex-basis: 100%;
+        flex-grow: 1;
+        text-align: center;
+        @include gutter(0.25, 0.5, 0.25, 0.5);
+
+        @include media-query(tablet) {
+            flex-basis: auto;
+            flex-grow: 0;
+        }
+    }
+
+    &__link {
+        color: $color--primary;
+
+        &:hover {
+            color: $color--black;
+        }
+
+    }
+
+    &__btn {
+        @include font-size(xs);
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+
+        &:hover {
+
+            #{$root}__btn-icon {
+                fill: $color--secondary;
+            }
+
+        }
+
+    }
+
+    &__btn-icon {
+        fill: $color--black;
+        transition: fill $default-transition-speed ease 0s;
+    }
+
+}

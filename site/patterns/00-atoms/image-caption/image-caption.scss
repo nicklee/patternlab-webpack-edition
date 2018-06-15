@@ -1,0 +1,10 @@
+.image-caption {
+
+    &__item {
+        @include gutter(0, 0, 0.25, 0);
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+}

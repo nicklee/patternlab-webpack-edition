@@ -1,0 +1,89 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header page__header--dark">
+
+        {% include "@organisms/page-heading/page-heading.twig" %}
+
+    </div>
+
+    <div class="page__content">
+
+        {% if streamfield %}
+
+        <div class="page__content-container">
+
+            <div class="page__primary-content page__primary-content--centered">
+
+                {% if share %}
+                    {% include "@molecules/share/share-sticky.twig" with share only %}
+                {% endif %}
+
+                <div class="streamfield">
+
+                    <h2 class="streamfield__heading">Working at Project name is curabitur blandit.</h2>
+
+                    <div class="streamfield__text">
+                        {% if image %}
+                            {% include "@atoms/images/image-inline/image-inline.twig" with image %}
+                        {% endif %}
+                        <p class="streamfield__text-item">Though there have been many challenges and lessons along the way for the ODA programme, which aims to join up data held by local authorities to enable actionable insights, in this blog I outline the three I believe are the most important. They should be of equal interest to those working both inside and outside of the public sector to unlock the true value of its data.</p>
+                    </div>
+
+                    {% include "@atoms/blockquote/blockquote.twig" %}
+
+                    <h2 class="streamfield__heading">Working at Project name is curabitur blandit.</h2>
+
+                    {% if video %}
+                        {% include "@molecules/iframe/iframe.twig" with video %}
+                    {% endif %}
+
+                    <div id="results"></div>
+
+                    <div class="cta-multi-block">
+                        <div class="cta-multi-block__container">
+                            <div class="cta-multi-block__item">
+                                {% include "@atoms/inline-cta/inline-cta.twig" %}
+                            </div>
+                            <div class="cta-multi-block__item">
+                                {% include "@atoms/inline-cta/inline-cta.twig" %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if overviewNav %}
+            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+        {% endif %}
+
+        {% if tabs %}
+            {% include "@molecules/tabs/tabs.twig" with tabs only %}
+        {% endif %}
+
+        {% if results %}
+            {% include "@organisms/search-results/search-results.twig" with results %}
+        {% endif %}
+
+    </div>
+
+    {% if cta or related %}
+    <div class="page__footer">
+        <div class="page__footer-container">
+            {% if related %}
+            <div class="page__footer-item listing--related">
+                <div class="page__footer-item__container">
+                    {% include "@organisms/listing/listing.twig" with related %}
+                </div>
+            </div>
+            {% endif %}
+            {% include "@molecules/03-cta/cta.twig" with cta %}
+        </div>
+    </div>
+    {% endif %}
+
+{% endblock %}

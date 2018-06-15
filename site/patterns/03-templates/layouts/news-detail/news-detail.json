@@ -1,0 +1,101 @@
+{
+    "title" : "News detail",
+    "template" : "standard",
+    "introduction": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.",
+    "published" : "25 January 18",
+    "readTime" : true,
+    "breadcrumb" : {
+        "title" : "Breadcrumb",
+        "items" : [
+            {
+                "title" : "Home",
+                "href" : "#"
+            },
+            {
+                "title" : "News",
+                "href" : "#"
+            },
+            {
+                "title" : "Page title",
+                "href" : ""
+            }
+        ]
+    },
+    "secondaryNav" : {
+        "title" : "In Latest",
+        "items" : [
+            {
+                "title" : "Blogs",
+                "href" : "#"
+            },
+            {
+                "title" : "Research",
+                "href" : "#"
+            },
+            {
+                "title" : "Events",
+                "href" : "#"
+            },
+            {
+                "title" : "News",
+                "href" : "#",
+                "class" : "selected"
+            }
+        ]
+    },
+    "imageFull" : {
+        "title" : "Awesome image",
+        "image" : "http://placehold.it/768x432"
+    },
+    "cta" : {
+        "title" : "Enjoy this? Get more via our newsletter",
+        "text" : "Receive the best of Project name delivered to your inbox every month",
+        "link" : "#",
+        "action" : "Sign up"
+    },
+    "related" : {
+        "title" : "Also of interest",
+        "loadMore" : false,
+        "items" : [
+            {
+                "title" : "Developing the new What Works Centre for Children’s Social Care",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "image" : "",
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "image" : "",
+                "subCategory" : "cat2",
+                "meta" : [
+                    {
+                        "title" : "Funding",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "image" : "",
+                "subCategory" : "category--toolkits",
+                "meta" : [
+                    {
+                        "title" : "Event",
+                        "date" : "22 November 2017 - 5:30pm — 8:00pm"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+<nav class="secondary-nav">
+    <div class="secondary-nav__container">
+        <div class="secondary-nav__header js-show-menu">
+            <h2 class="secondary-nav__heading">
+                <div class="secondary-nav__heading-icon">
+                    {% include "@atoms/hamburger/hamburger.twig" %}
+                </div>
+                <div class="secondary-nav__heading-label">More in {{ title }}</div>
+            </h2>
+        </div>
+        <div class="secondary-nav__options">
+            <div class="secondary-nav__options-container">
+                {% for navItem in nav %}
+                    {% include "@organisms/navigation/secondary-nav/secondary-nav-item.twig" with navItem %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav> <!-- /secondary-nav -->

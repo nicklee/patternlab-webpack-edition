@@ -1,0 +1,14 @@
+{
+    "title" : "Health",
+    "nav" : [
+        {
+            "title" : "Secondary nav item one",
+            "href" : "#"
+        },
+        {
+            "title" : "Secondary nav item two",
+            "href" : "#",
+            "class" : "active"
+        }
+    ]
+}

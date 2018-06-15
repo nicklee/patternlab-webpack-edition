@@ -1,0 +1,70 @@
+.breadcrumb-item {
+    @include font-size(xs);
+    @include gutter(0, 0.15, 0, 0);
+    display: flex;
+    align-items: center;
+    color: $color--black;
+
+    .page__header--dark & {
+        color: $color--white;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        color: $color--warm-grey2;
+        // sass-lint:disable indentation
+        transition: border-color $default-transition-speed ease 0s,
+                    color $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        .page__header--dark & {
+            color: $color--white;
+        }
+
+        .template__error & {
+            color: $color--black;
+        }
+
+        &:hover {
+            color: $color--link;
+
+            .page__header--dark & {
+                color: $color--primary;
+            }
+
+            .template__error & {
+                color: $color--white;
+            }
+
+        }
+
+    }
+
+    &__divide {
+        @include gutter(0, 0, 0, 0.15);
+        color: $color--border;
+
+        .template__error & {
+            color: $color--black;
+        }
+
+    }
+
+    .breadcrumb & {
+
+        // breadcrumb label
+        &:first-child {
+            display: none;
+            color: $color--default;
+
+            @include media-query(tablet) {
+                display: flex;
+            }
+
+        }
+
+    }
+
+
+}

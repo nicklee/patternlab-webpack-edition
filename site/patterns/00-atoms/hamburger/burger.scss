@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $Burger
+\*------------------------------------*/
+
+.burger {
+    $root: &;
+    display: flex;
+
+    &__icon {
+        fill: $color--black;
+    }
+
+    .mobile-menu-link.active & {
+
+        #{$root}__icon {
+            fill: $color--primary;
+        }
+
+    }
+
+}

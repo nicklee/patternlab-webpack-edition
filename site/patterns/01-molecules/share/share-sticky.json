@@ -1,0 +1,20 @@
+{
+    "title" : "Share",
+    "items" : [
+        {
+            "title" : "twitter",
+            "icon" : "twitter",
+            "href" : "#"
+        },
+        {
+            "title" : "facebook",
+            "icon" : "facebook",
+            "href" : "#"
+        },
+        {
+            "title" : "linkedin",
+            "icon" : "linkedin",
+            "href" : "#"
+        }
+    ]
+}

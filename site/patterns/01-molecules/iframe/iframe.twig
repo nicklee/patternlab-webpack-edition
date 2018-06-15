@@ -1,0 +1,5 @@
+<div class="iframe {% if modifier %}iframe--{{ modifier }}{% endif %}">
+    {% for video in items %}
+        {% include "@atoms/video/video.twig" with video %}
+    {% endfor %}
+</div>

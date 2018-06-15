@@ -1,0 +1,64 @@
+{
+    "title" : "Filters",
+    "items" : [
+        {
+            "title" : "Show me latest...",
+            "nested" : [
+                {
+                    "title" : "All types of content",
+                    "safeTitle" : "*",
+                    "href" : "#",
+                    "class" : "active"
+                },
+                {
+                    "title" : "News",
+                    "safeTitle" : ".category--news",
+                    "href" : "#category--news",
+                    "class" : ""
+                },
+                {
+                    "title" : "Funding",
+                    "safeTitle" : ".category--news",
+                    "href" : "#category--news",
+                    "class" : ""
+                },
+                {
+                    "title" : "Data",
+                    "safeTitle" : ".category--news",
+                    "href" : "#category--news",
+                    "class" : ""
+                },
+                {
+                    "title" : "Toolkits",
+                    "safeTitle" : ".cat2",
+                    "href" : "#cat2",
+                    "class" : ""
+                },
+                {
+                    "title" : "Blogs",
+                    "safeTitle" : ".cat2",
+                    "href" : "#cat2",
+                    "class" : ""
+                },
+                {
+                    "title" : "Case studies",
+                    "safeTitle" : ".category--toolkits",
+                    "href" : "#category--toolkits",
+                    "class" : ""
+                },
+                {
+                    "title" : "Events",
+                    "safeTitle" : ".category--blogs",
+                    "href" : "#category--blogs",
+                    "class" : ""
+                },
+                {
+                    "title" : "Reports",
+                    "safeTitle" : ".category--events",
+                    "href" : "#category--events",
+                    "class" : ""
+                }
+            ]
+        }
+    ]
+}

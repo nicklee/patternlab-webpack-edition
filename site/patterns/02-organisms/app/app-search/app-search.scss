@@ -1,0 +1,131 @@
+.app-search {
+    @include aligner;
+    $root: &;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        @include media-query(tablet) {
+            align-items: center;
+        }
+
+    }
+
+    &__label {
+        display: none;
+    }
+
+    &__input {
+        @include font-size(l);
+        width: 100%;
+        min-width: 0;
+
+        @include media-query(laptop) {
+            @include font-size(xl);
+            width: 60%;
+        }
+
+        &::placeholder {
+            @include font-size(l);
+            color: $color--warm-grey2;
+
+            @include media-query(laptop) {
+                @include font-size(xl);
+            }
+
+        }
+
+        .search-header & {
+            width: 100%;
+            border-color: $color--black;
+        }
+
+    }
+
+    &__button {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: ($grid);
+        height: ($grid);
+        cursor: pointer;
+
+        @include media-query(tablet) {
+            position: relative;
+            top: auto;
+            right: auto;
+            left: -($grid * 1.75);
+            width: ($grid * 2);
+            height: ($grid * 2);
+        }
+
+        &:hover {
+
+            #{$root}__icon {
+                fill: $color--link-hover;
+            }
+
+        }
+
+        .search-header & {
+            position: absolute;
+            top: ($grid / 2);
+            left: auto;
+            right: 0;
+        }
+
+    }
+
+    &__icon {
+        width: ($grid * 1);
+        height: ($grid * 1);
+
+        @include media-query(tablet) {
+            width: ($grid * 1.5);
+            height: ($grid * 1.5);
+        }
+
+    }
+
+    &__toggle-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: $color--primary;
+        transition: fill $default-transition-speed ease 0s;
+
+        @include media-query(laptop) {
+            top: -($grid / 2);
+            left: auto;
+            right: 0;
+
+            .headroom--not-top & {
+                top: -($grid);
+                right: ($grid * 2.5);
+            }
+
+        }
+
+        &:hover {
+            fill: $color--black;
+        }
+    }
+
+    .headroom--top & {
+
+        @include media-query(tablet) {
+            margin-top: 0;
+        }
+
+    }
+
+}

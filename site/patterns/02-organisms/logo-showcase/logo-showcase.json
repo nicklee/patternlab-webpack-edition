@@ -1,0 +1,21 @@
+{
+    "title" : "Our partners",
+    "items" : [
+        {
+            "title" : "Partner one",
+            "image" : "../../../images/pl_logo.jpg"
+        },
+        {
+            "title" : "Partner two",
+            "image" : "../../../images/pl_logo.jpg"
+        },
+        {
+            "title" : "Partner three",
+            "image" : "../../../images/pl_logo.jpg"
+        },
+        {
+            "title" : "Partner four",
+            "image" : "../../../images/pl_logo.jpg"
+        }
+    ]
+}

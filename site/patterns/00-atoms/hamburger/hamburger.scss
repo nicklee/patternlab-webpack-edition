@@ -1,0 +1,121 @@
+.hamburger {
+    width: 24px;
+    height: 17px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $color--primary;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.25s ease-in-out;
+
+        .header--light & {
+            background-color: $color--black;
+        }
+
+        .header--dark & {
+            background-color: $color--white;
+        }
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 7px;
+        }
+
+        &:nth-child(4) {
+            top: 14px;
+        }
+
+    }
+
+    &:hover {
+
+        span {
+            background-color: $color--black;
+
+            .header--light &,
+            .header--dark & {
+                opacity: 0.5;
+            }
+
+            .header--dark & {
+                background-color: $color--white;
+            }
+
+        }
+
+    }
+
+    .mobile-menu-link.active &,
+    .secondary-nav__container.active & {
+
+        span {
+            background-color: $color--black;
+
+            .header--light & {
+                background-color: $color--black;
+            }
+
+            .header--dark & {
+                background-color: $color--white;
+            }
+
+            &:nth-child(1) {
+                top: 9px;
+                width: 0%;
+                left: 50%;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(4) {
+                top: 9px;
+                width: 0%;
+                left: 50%;
+            }
+
+        }
+
+    }
+
+    .secondary-nav:hover & {
+
+        span {
+            background-color: $color--black;
+
+            .overview-bar.stuck & {
+                background-color: $color--black;
+            }
+
+        }
+
+    }
+
+    .overview-bar.stuck & {
+
+        span {
+            background-color: $color--white;
+        }
+
+    }
+
+}

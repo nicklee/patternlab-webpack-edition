@@ -1,0 +1,115 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+<div class="page__header">
+
+    <div class="page-heading">
+
+        <div class="page-heading__container">
+
+            <div class="page-heading__content">
+
+                {% if breadcrumb %}
+                <div class="page-heading__breadcrumb">
+                    {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                </div>
+                {% endif %}
+
+                {% if title %}
+                <h1 class="page-heading__heading">{{ title }}</h1>
+                {% endif %}
+
+                <div class="page-heading__meta">
+                    <div class="page-heading__meta-container meta">
+                        {% if published %}
+                        <div class="page-heading__meta-item meta-item">
+                            <div class="meta-item__label">
+                                {{ published }}
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if areaOfWork %}
+                        <div class="page-heading__meta-item meta-item">
+                            <div class="meta-item__label">
+                                In
+                                <a class="meta-item__link" href="#">
+                                    {{ areaOfWork }}
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div> <!-- /page-heading__meta -->
+
+                {% if introduction %}
+                <div class="page-heading__introduction">
+                    {% include "@atoms/introduction/introduction.twig" %}
+                </div>
+                {% endif %}
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="page__content">
+
+    <div class="page__content-container">
+
+        <div class="page__primary-content page__primary-content--centered">
+
+            {% if share %}
+            {% include "@molecules/share/share-sticky.twig" with share only %}
+            {% endif %}
+
+            <div class="streamfield">
+
+                <div class="streamfield__text">
+                    <p class="streamfield__text-item">During her speech at the World Economic Forum in Davos today, Theresa May announced plans for a Centre for Data Ethics and Innovation to regulate artificial intelligence. During her speech at the World Economic Forum in Davos today, Theresa May announced plans for a Centre for Data Ethics and Innovation to regulate artificial intelligence.</p>
+                </div>
+
+                <div class="streamfield__text">
+
+                    <h2 class="streamfield__heading" id="one">Starting with a specific problem to be solved</h2>
+
+                    <p class="streamfield__text-item">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p class="streamfield__text-item">During her speech at the World Economic Forum in Davos today, Theresa May announced plans for a Centre for Data Ethics and Innovation to regulate artificial intelligence. During her speech at the World Economic Forum in Davos today, Theresa May announced plans for a Centre for Data Ethics and Innovation to regulate artificial intelligence.</p>
+
+                    <h2 class="streamfield__heading" id="one">Data can offer impactful and actionable insight</h2>
+
+                    <p class="streamfield__text-item">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p class="streamfield__text-item">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+
+            </div> <!-- /streamfield -->
+
+        </div> <!-- /page__primary-content -->
+
+    </div> <!-- /page__content-container -->
+
+</div> <!-- /page__content -->
+
+<div class="page__footer">
+    <div class="page__footer-container">
+        <div class="page__footer-item listing--related">
+            <div class="page__footer-item__container">
+                {% include "@organisms/listing/listing.twig" with related %}
+            </div>
+        </div>
+        {% if cta %}
+        {% include "@molecules/03-cta/cta.twig" with cta %}
+        {% endif %}
+        {% if fixedMessage %}
+        {% include "@molecules/fixed-message/fixed-message.twig" with fixedMessage %}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,277 @@
+{
+    "title" : "Blog title",
+    "template" : "blog-detail",
+    "introduction": "Blog introduction",
+    "published" : "Tuesday, 24 October 2017",
+    "breadcrumb" : {
+        "title" : "Breadcrumb",
+        "items" : [
+            {
+                "title" : "Home",
+                "href" : "#"
+            },
+            {
+                "title" : "Latest",
+                "href" : "#"
+            },
+            {
+                "title" : "Blog",
+                "href" : "#"
+            },
+            {
+                "title" : "Page title",
+                "href" : ""
+            }
+        ]
+    },
+    "secondaryNav" : {
+        "title" : "In Latest",
+        "items" : [
+            {
+                "title" : "Blogs",
+                "href" : "#",
+                "class" : "selected"
+            },
+            {
+                "title" : "Research",
+                "href" : "#"
+            },
+            {
+                "title" : "Events",
+                "href" : "#"
+            },
+            {
+                "title" : "News",
+                "href" : "#"
+            }
+        ]
+    },
+    "shortcuts" : {
+        "title" : "Shortcuts",
+        "items" : [
+            {
+                "title" : "Starting with a specific problem to be solved, for which data can offer impactful and actionable insight, is essential.",
+                "href" : "#"
+            },
+            {
+                "title" : "A data project in the public sector is just as often a change management project.",
+                "href" : "#"
+            },
+            {
+                "title" : "Ultimately, quality data underpins everything.",
+                "href" : "#"
+            }
+        ]
+    },
+    "video" : {
+        "title" : "video",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702"
+            }
+        ]
+    },
+    "slideshow" : {
+        "title" : "Slideshow",
+        "items" : [
+            {
+                "title" : "Test caption one",
+                "image" : "../../../images/fpo_16x9.png"
+            },
+            {
+                "title" : "Test caption",
+                "image" : "../../../images/fpo_16x9.png"
+            }
+        ]
+    },
+    "bubbles" : {
+        "title" :  "bubbles",
+        "items" : [
+            {
+                "title" : "First bubble",
+                "speed" : "1"
+            },
+            {
+                "title" : "Second bubble",
+                "speed" : "3"
+            },
+            {
+                "title" : "Third bubble",
+                "speed" : "-2"
+            },
+            {
+                "title" : "Fourth bubble",
+                "speed" : "1"
+            }
+        ]
+    },
+    "authors" : {
+        "title": "Author",
+        "items": [
+            {
+                "title" : "Mr Jon Smith",
+                "href" : "#",
+                "image" : "../../../images/fpo_avatar.png"
+            }
+        ]
+    },
+    "cta" : {
+        "title" : "Enjoy this? Get more via our newsletter",
+        "text" : "Receive the best of Project name delivered to your inbox every month",
+        "link" : "#",
+        "action" : "Sign up"
+    },
+    "related" : {
+        "title" : "Also of interest",
+        "items" : [
+            {
+                "title" : "Developing the new What Works Centre for Children’s Social Care",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "image" : "",
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "image" : "",
+                "subCategory" : "cat2",
+                "meta" : [
+                    {
+                        "title" : "Funding",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "image" : "../../../images/fpo_4x3.jpg",
+                "subCategory" : "category--toolkits",
+                "meta" : [
+                    {
+                        "title" : "Data",
+                        "date" : "22 November 2017 - 5:30pm — 8:00pm"
+                    }
+                ]
+            },
+            {
+                "title" : "Matching the crowd - Combining crowdfunding and institutional funding to get great ideas off the ground",
+                "href" : "#",
+                "text" : "",
+                "image" : "../../../images/fpo_4x3.jpg",
+                "subCategory" : "category--blogs",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Setting Our Sights: A strategy for maximising social impact",
+                "href" : "#",
+                "text" : "",
+                "image" : "../../../images/fpo_4x3.jpg",
+                "subCategory" : "category--casestudies",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "3.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "The Future of Skills: Employment in 2030",
+                "href" : "#",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "category--events",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "28.09.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Setting Our Sights: A strategy for maximising social impact",
+                "href" : "#",
+                "text" : "",
+                "image" : "../../../images/fpo_4x3.jpg",
+                "subCategory" : "category--reports",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "3.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "The Future of Skills: Employment in 2030",
+                "href" : "#",
+                "text" : "",
+                "image" : "",
+                "subCategory" : "cat8",
+                "meta" : [
+                    {
+                        "title" : "Report",
+                        "date" : "28.09.17"
+                    }
+                ]
+            }
+        ]
+    },
+    "series" : {
+        "title" : "Also in series",
+        "items" : [
+            {
+                "title" : "Developing the new What Works Centre for Children’s Social Care",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "image" : "",
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "image" : "",
+                "subCategory" : "cat2",
+                "meta" : [
+                    {
+                        "title" : "Funding",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "image" : "../../../images/fpo_4x3.jpg",
+                "subCategory" : "category--toolkits",
+                "meta" : [
+                    {
+                        "title" : "Data",
+                        "date" : "22 November 2017 - 5:30pm — 8:00pm"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,106 @@
+.secondary-nav {
+    $root: &;
+    cursor: pointer;
+
+    &__container {
+
+        &.active {
+
+            #{$root}__options-container {
+                pointer-events: auto;
+                opacity: 1;
+                transform: translate3d(0, 0%, 0);
+
+                #{$root}__icon {
+                    fill: $color--black;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__header {
+        @include gutter(0.25, 0, 0.25, 0);
+    }
+
+    &__heading {
+        @include font-size(m);
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        transition: color $default-transition-speed ease 0s;
+    }
+
+    &__heading-label {
+        margin-left: ($grid / 2);
+    }
+
+    &__options {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        height: 900px;
+        width: 300px;
+        overflow: hidden;
+
+        pointer-events: none;
+        // sass-lint:disable no-vendor-prefixes
+        -webkit-mask-image: linear-gradient(to bottom, rgba($color--black, 1) 0%, rgba($color--black, 1) 100%);
+        // sass-lint:enddisable
+        mask-image: linear-gradient(to bottom, rgba($color--black, 1) 0%, rgba($color--black, 1) 100%);
+
+        @include media-query(tablet) {
+            height: 900px;
+            width: 400px;
+        }
+    }
+
+    &__options-container {
+        @include gutter(0, 0.25, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        background-color: $color--white;
+        border: 1px solid $color--border-light;
+        transform: translate3d(0, -100%, 0);
+
+        @include media-query(tablet) {
+            width: ($grid * 10);
+            // sass-lint:disable indentation
+            transition: transform $default-transition-speed ease 0s,
+                        opacity ($default-transition-speed / 4) ease 0s;
+            // sass-lint:enddisable
+        }
+
+    }
+
+    &:hover,
+    &:focus {
+
+        @include media-query(tablet) {
+
+            #{$root}__options-container {
+                pointer-events: auto;
+                opacity: 1;
+                transform: translate3d(0, 0%, 0);
+            }
+
+            #{$root}__heading {
+                color: $color--black;
+            }
+
+            #{$root}__icon {
+                fill: $color--black;
+            }
+
+        }
+
+    }
+
+}

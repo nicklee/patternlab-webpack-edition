@@ -1,0 +1,21 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+        {% include "@molecules/search-header/search-header.twig" %}
+    </div>
+
+    <div class="page__content">
+
+        {% if overviewNav %}
+            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+        {% endif %}
+
+        {% if results %}
+            {% include "@organisms/search-results/search-results.twig" with results %}
+        {% endif %}
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+        
+        {% include "@organisms/hero/hero-section/hero-section.twig" with hero %}
+
+        <span class="anchor" id="content"></span>
+
+    </div>
+
+    <div class="page__content">
+        {% if overviewNav %}
+            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+        {% endif %}
+        {% include "@organisms/filtered-list/filtered-list.twig" %}
+    </div>
+
+    <div class="page__footer">
+        {% include "@organisms/browser/browser.twig" with toolkits %}
+        {% include "@molecules/03-cta/cta.twig" with cta %}
+    </div>
+
+{% endblock %}

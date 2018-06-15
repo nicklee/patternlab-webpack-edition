@@ -1,0 +1,151 @@
+{
+    "projectName" : "Project name",
+    "priorityNavigation" : [
+        {
+            "title" : "Primary nav 1",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 2",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 3",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "Primary nav 4",
+            "href" : "#",
+            "dropdown" : false
+        }
+    ],
+    "audienceNavigation" : [
+        {
+            "title" : "Audience nav 1",
+            "href" : "#"
+        },
+        {
+            "title" : "Audience nav 2",
+            "href" : "#"
+        },
+        {
+            "title" : "Audience nav 3",
+            "href" : "#"
+        }
+    ],
+    "loadMore" : {
+        "title" : "Load more",
+        "icon" : "arrow-down"
+    },
+    "share" : {
+        "title" : "Share",
+        "items" : [
+            {
+                "title" : "twitter",
+                "icon" : "twitter",
+                "href" : "#"
+            },
+            {
+                "title" : "facebook",
+                "icon" : "facebook",
+                "href" : "#"
+            },
+            {
+                "title" : "linkedin",
+                "icon" : "linkedin",
+                "href" : "#"
+            }
+        ]
+    },
+    "autocomplete" : {
+        "title" : "Autocomplete",
+        "nested" : [
+            {
+                "title" : "Search result 1",
+                "href" : "#"
+            },
+            {
+                "title" : "Search result 2",
+                "href" : "#"
+            },
+            {
+                "title" : "Search result 3",
+                "href" : "#"
+            },
+            {
+                "title" : "Search result 4",
+                "href" : "#"
+            },
+            {
+                "title" : "Search result 5",
+                "href" : "#"
+            }
+        ]
+    },
+    "pagination" : {
+        "items" : [
+            {
+                "title" : "Prev",
+                "href" : "#",
+                "modifiers" : [
+                    {
+                        "class" : "pagination-item--prev"
+                    },
+                    {
+                        "class" : "pagination-item--disabled"
+                    }
+                ]
+            },
+            {
+                "title" : "1",
+                "href" : "#",
+                "modifiers" : [
+                    {
+                        "class" : "pagination-item--active"
+                    }
+                ]
+            },
+            {
+                "title" : "2",
+                "href" : "#"
+            },
+            {
+                "title" : "3",
+                "href" : "#"
+            },
+            {
+                "title" : "…",
+                "modifiers" : [
+                    {
+                        "class" : "pagination-item--divider"
+                    }
+                ]
+            },
+            {
+                "title" : "21",
+                "href" : "#"
+            },
+            {
+                "title" : "22",
+                "href" : "#"
+            },
+            {
+                "title" : "23",
+                "href" : "#"
+            },
+            {
+                "title" : "Next",
+                "href" : "#",
+                "modifiers" : [
+                    {
+                        "class" : "pagination-item--next"
+                    }
+                ]
+            }
+        ]
+    },
+    "footerCopyright" : "2017 Project name, a registered charity in England and Wales 1144091 and Scotland SC042833."
+}

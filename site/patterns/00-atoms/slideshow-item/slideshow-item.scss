@@ -1,0 +1,48 @@
+.slideshow-item {
+    $root: &;
+
+    &__link {
+        display: block;
+        color: $color--black;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+
+            #{$root}__caption {
+                color: $color--primary;
+            }
+
+        }
+
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__caption {
+        @include gutter(0.5, 2, 0, 0); // right gutter to avoid bumping into slideshow nav
+        @include font-size(default);
+        min-height: 45px; // ensure navigation is aligned correctly
+        line-height: 1.5;
+        // sass-lint:disable indentation
+        transition: color $default-transition-speed ease 0s,
+                    opacity 0s ease 0s;
+        // sass-lint:enddisable
+
+        .owl-item & {
+            opacity: 0;
+        }
+
+        // sass-lint:disable force-element-nesting
+        .owl-item.active & {
+            opacity: 1;
+        }
+        // sass-lint:enddisable
+
+    }
+
+}

@@ -1,0 +1,25 @@
+.logo-item {
+    $root: &;
+
+    .logo-showcase & {
+        flex-basis: 33.333%;
+        min-width: 33.333%;
+        max-width: 33.333%;
+    }
+
+    &__container {
+
+        .logo-showcase & {
+            @include gutter(0, 1, 1, 0);
+            display: block;
+        }
+
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,151 @@
+{
+    "title" : "Standard page",
+    "template" : "standard",
+    "introduction": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.",
+    "published" : false,
+    "breadcrumb" : {
+        "title" : "Breadcrumb",
+        "items" : [
+            {
+                "title" : "Home",
+                "href" : "#"
+            },
+            {
+                "title" : "Section",
+                "href" : "#"
+            },
+            {
+                "title" : "Page title",
+                "href" : ""
+            }
+        ]
+    },
+    "secondaryNav" : {
+        "title" : "In Latest",
+        "items" : [
+            {
+                "title" : "Blogs",
+                "href" : "#",
+                "class" : "selected"
+            },
+            {
+                "title" : "Research",
+                "href" : "#"
+            },
+            {
+                "title" : "Events",
+                "href" : "#"
+            },
+            {
+                "title" : "News",
+                "href" : "#"
+            }
+        ]
+    },
+    "shortcuts" : {
+        "title" : "Shortcuts",
+        "items" : [
+            {
+                "title" : "Starting with a specific problem to be solved, for which data can offer impactful and actionable insight, is essential.",
+                "href" : "#"
+            },
+            {
+                "title" : "A data project in the public sector is just as often a change management project.",
+                "href" : "#"
+            },
+            {
+                "title" : "Ultimately, quality data underpins everything.",
+                "href" : "#"
+            }
+        ]
+    },
+    "video" : {
+        "title" : "video",
+        "items" : [
+            {
+                "source" : "https://player.vimeo.com/video/222643702"
+            }
+        ]
+    },
+    "imageFull" : {
+        "title" : "Awesome image",
+        "image" : "http://placehold.it/768x432"
+    },
+    "image" : {
+        "title" : "Awesome image",
+        "image" : "http://placehold.it/768x432",
+        "modifier" : "right"
+    },
+    "slideshow" : {
+        "title" : "Slideshow",
+        "items" : [
+            {
+                "title" : "Test caption one",
+                "image" : "../../../images/fpo_16x9.png"
+            },
+            {
+                "title" : "Test caption",
+                "image" : "../../../images/fpo_16x9.png"
+            }
+        ]
+    },
+    "data" : {
+        "title" : "Clubbing map",
+        "items" : [
+            {
+                "source" : "https://Project nameuk.github.io/clubbingmap/"
+            }
+        ]
+    },
+    "cta" : {
+        "title" : "Enjoy this? Get more via our newsletter",
+        "text" : "Receive the best of Project name delivered to your inbox every month",
+        "link" : "#",
+        "action" : "Sign up"
+    },
+    "related" : {
+        "title" : "Also of interest",
+        "loadMore" : false,
+        "items" : [
+            {
+                "title" : "Developing the new What Works Centre for Children’s Social Care",
+                "href" : "#",
+                "text" : "The Government is commissioning a consortium to develop and incubate a new What Works Centre for Children’s Social Care. We’re delighted...",
+                "image" : "",
+                "subCategory" : "category--news",
+                "meta" : [
+                    {
+                        "title" : "News",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "Mental health: A snapshot of trends and technologies",
+                "href" : "#",
+                "text" : "Today is World Mental Health Day, so we will be posting a series of blogs over the coming week profiling some topics in the field",
+                "image" : "",
+                "subCategory" : "cat2",
+                "meta" : [
+                    {
+                        "title" : "Funding",
+                        "date" : "12.10.17"
+                    }
+                ]
+            },
+            {
+                "title" : "European Social Innovation Competition 2017 - Equality Rebooted awards ceremony",
+                "href" : "#",
+                "text" : "Register your interest for our publication launch",
+                "image" : "",
+                "subCategory" : "category--toolkits",
+                "meta" : [
+                    {
+                        "title" : "Event",
+                        "date" : "22 November 2017 - 5:30pm — 8:00pm"
+                    }
+                ]
+            }
+        ]
+    }
+}

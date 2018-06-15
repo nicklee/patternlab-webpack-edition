@@ -1,0 +1,9 @@
+{
+    "title" : "1",
+    "href" : "#",
+    "modifiers" : [
+        {
+            "class" : "pagination-item--active"
+        }
+    ]
+}

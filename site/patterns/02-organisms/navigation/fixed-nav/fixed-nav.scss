@@ -1,0 +1,13 @@
+.fixed-nav {
+    @include gutter(0.25, 0.25, 0.25, 0.25);
+    $root: &;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); // ensure the nav is actually sitting in the middle of the page
+
+    @include media-query(tablet) {
+        @include gutter(0.25, 0.5, 0.25, 0.25);
+    }
+}

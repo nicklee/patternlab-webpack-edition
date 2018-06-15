@@ -1,0 +1,10 @@
+<div class="breadcrumb-item">
+    {% if href %}
+        <a class="breadcrumb-item__link" href="{{ href }}">
+    {% endif %}
+        {{ title }}
+    {% if href %}
+        </a>
+        <span class="breadcrumb-item__divide">/</span>
+    {% endif %}
+</div>
