@@ -1,32 +1,9 @@
 <div class="social-links">
-    <ul class="social-links__container">
-        <li class="social-link-item social-link-item--twitter">
-            <a aria-label="Twitter" class="social-link-item__link" href="#">
-                <svg class="social-link-item__icon" width="21px" height="21px">
-                    <use xlink:href="#twitter"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="social-link-item social-link-item--facebook">
-            <a aria-label="Facebook" class="social-link-item__link" href="#">
-                <svg class="social-link-item__icon" width="21px" height="21px">
-                    <use xlink:href="#facebook"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="social-link-item social-link-item--linkedin">
-            <a aria-label="Linkedin" class="social-link-item__link" href="#">
-                <svg class="social-link-item__icon" width="21px" height="21px">
-                    <use xlink:href="#linkedin"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="social-link-item social-link-item--instagram">
-            <a aria-label="Instagram" class="social-link-item__link" href="#">
-                <svg class="social-link-item__icon" width="21px" height="21px">
-                    <use xlink:href="#instagram"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
+    <div class="social-links__container">
+        {% for social in items %}
+            <div class="social-links__item">
+                {% include "@atoms/social-item/social-item.twig" with social %}
+            </div>
+        {% endfor %}
+    </div>
 </div>
