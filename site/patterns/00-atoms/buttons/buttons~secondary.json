@@ -1,0 +1,8 @@
+{
+    "title" : "Button secondary",
+    "items" : [
+        {
+            "class" : "btn--secondary"
+        }
+    ]
+}

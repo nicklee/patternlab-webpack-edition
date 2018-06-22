@@ -1,28 +1,35 @@
 .btn {
     @include gutter(0.25, 0.75, 0.25, 0.75);
     @include font-size(m);
-    font-weight: 500;
+    $root: &;
+    font-family: $font--primary;
+    font-weight: 700;
     text-align: center;
     vertical-align: top;
     text-decoration: none;
     position: relative;
     display: inline-block;
-    border-radius: 0;
+    width: 100%;
     border: 0;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 2px;
     color: $color--primary;
     // sass-lint:disable indentation
     transition: color $default-transition-speed ease-in-out,
                 background-color $default-transition-speed ease-in-out;
     // sass-lint:enddisable
 
+    @include media-query(laptop) {
+        width: auto;
+    }
+
     &--primary {
-        background-color: $color--primary;
+        background-color: $color--quinary;
         color: $color--white;
 
         &:hover {
-            background-color: $color--tertiary;
+            background-color: $color--senary;
         }
 
     }
@@ -73,9 +80,16 @@
         @include gutter(0.1, 0.3, 0.1, 0.3);
     }
 
-    &--icon {
+    &--icon-only {
+        @include gutter(0, 0.5, 0, 0.5, true);
         display: flex;
         align-items: center;
+        height: 46px; // Match input heights
+
+        #{$root}__icon {
+            margin-left: 0;
+        }
+
     }
 
     &__container {
