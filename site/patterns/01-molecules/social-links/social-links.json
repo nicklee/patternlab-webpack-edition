@@ -1,0 +1,20 @@
+{
+    "items" : [
+        {
+            "title" : "Linkedin",
+            "icon" : "linkedin"
+        },
+        {
+            "title" : "Facebook",
+            "icon" : "facebook"
+        },
+        {
+            "title" : "Twitter",
+            "icon" : "twitter"
+        },
+        {
+            "title" : "Youtube",
+            "icon" : "youtube"
+        }
+    ]
+}

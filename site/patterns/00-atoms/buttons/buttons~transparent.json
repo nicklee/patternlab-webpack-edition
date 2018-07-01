@@ -1,0 +1,8 @@
+{
+    "title" : "Button transparent",
+    "items" : [
+        {
+            "class" : "btn--transparent"
+        }
+    ]
+}
