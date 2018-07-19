@@ -133,8 +133,5 @@
     "jquery": "^2.2.4",
     "js-cookie": "^2.1.4",
     "promise-polyfill": "^7.1.0",
-    "prop-types": "^15.6.1",
-    "url-search-params-polyfill": "^2.0.3",
-    "whatwg-fetch": "^2.0.3"
   }
 }
