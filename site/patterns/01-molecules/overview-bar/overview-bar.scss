@@ -26,16 +26,6 @@
     &.stuck {
         background-color: rgba($color--warm-grey4, 0.95);
         color: $color--white;
-
-        .template__blog-detail &,
-        .template__profile & {
-
-            #{$root}__heading {
-                opacity: 1;
-            }
-
-        }
-
     }
 
     &__container {
@@ -52,45 +42,6 @@
 
         @include media-query(wide) {
             @include gutter(0, 0, 0, 0);
-        }
-
-        .template__search & {
-
-            @include media-query(tablet) {
-                @include gutter(0, 1, 0, 1);
-            }
-
-            @include media-query(desktop) {
-                @include gutter(0, 0, 0, 0);
-                max-width: $max-width--s;
-            }
-
-        }
-
-        .template__listing & {
-
-            @include media-query(tablet) {
-                @include gutter(0, 1, 0, 1);
-            }
-
-            @include media-query(desktop) {
-                @include gutter(0, 0, 0, 0);
-                max-width: $max-width--m;
-            }
-
-        }
-
-        .template__team & {
-
-            @include media-query(desktop) {
-                @include gutter(0, 1, 0, 1);
-                @include aligner;
-            }
-
-            @include media-query(wide) {
-                @include gutter(0, 0, 0, 0);
-            }
-
         }
 
     }
@@ -131,12 +82,6 @@
             font-style: normal;
         }
 
-        .template__blog-detail &,
-        .template__profile & {
-            opacity: 0;
-            transition: opacity $default-transition-speed ease 0s;
-        }
-
     }
 
     &__content {
@@ -156,19 +101,6 @@
         flex-basis: 100%;
         min-width: 100%;
         max-width: 100%;
-    }
-
-    .template__listing &,
-    .template__search & {
-        margin-bottom: 0;
-    }
-
-
-    .template__blog-detail &,
-    .template__report &,
-    .template__report-page &,
-    .template__report-chapter-page & {
-        border-top: 1px solid rgba($color--border, 0.4);
     }
 
 }

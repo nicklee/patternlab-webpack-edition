@@ -2,28 +2,28 @@
     {% include "@atoms/progress-bar/progress-bar.twig" %}
 {% endif %}
 
-<div class="app-header" {% if headerBg %}style="background-color: {{ headerBg }};"{% endif %}>
+<div class="header" {% if headerBg %}style="background-color: {{ headerBg }};"{% endif %}>
 
-    <div class="app-header__container">
+    <div class="header__container">
 
-        <div class="app-header__content">
+        <div class="header__content">
 
-            <div class="app-header__search-toggle">
+            <div class="header__search-toggle">
                 {% include "@atoms/search-toggle/search-toggle.twig" %}
             </div>
 
-            <div class="app-header__home-link">
+            <div class="header__home-link">
                 {% include "@molecules/links/home-link/home-link.twig" %}
             </div>
 
-            <div class="app-header__nav-container">
+            <div class="header__nav-container">
 
-                <div class="app-header__audience-navigation">
+                <div class="header__audience-navigation">
                     {% include "@organisms/navigation/audience-nav/audience-nav.twig" %}
                     {% include "@atoms/search-toggle/search-toggle.twig" %}
                 </div>
 
-                <div class="app-header__navigation">
+                <div class="header__navigation">
                     {% include "@organisms/navigation/priority-nav/priority-nav.twig" %}
                 </div>
 

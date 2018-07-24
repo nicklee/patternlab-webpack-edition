@@ -1,7 +1,7 @@
 .dropdown {
     background-color: $color--overlay;
 
-    .app-header__navigation & {
+    .header__navigation & {
         display: none;
 
         @include media-query(tablet) {

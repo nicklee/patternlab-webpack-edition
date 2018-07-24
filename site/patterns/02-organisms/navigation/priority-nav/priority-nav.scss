@@ -7,8 +7,7 @@
             display: flex;
         }
 
-        .headroom--not-top &,
-        .template__data & {
+        .headroom--not-top & {
             display: none;
         }
 
@@ -21,8 +20,7 @@
             display: none;
         }
 
-        .headroom--not-top &,
-        .template__data & {
+        .headroom--not-top & {
             display: block;
         }
 

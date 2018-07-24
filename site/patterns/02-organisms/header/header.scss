@@ -2,7 +2,7 @@
     $App header
 \*------------------------------------*/
 
-.app-header {
+.header {
     @include gutter(0, 0, 0, 0);
     $root: &;
     position: fixed;
@@ -58,7 +58,7 @@
         }
 
         @include media-query(laptop) {
-            // Bottom gutter should match app-header__container top gutter
+            // Bottom gutter should match header__container top gutter
             @include gutter(0, 0, 0.75, 0);
         }
 
@@ -105,79 +105,6 @@
             justify-content: flex-end;
         }
 
-    }
-
-    // Template specific
-
-    .headroom--not-top &,
-    .template__data & {
-        border-color: $color--border-light;
-
-        #{$root}__container {
-            padding-top: ($grid / 2);
-            padding-bottom: ($grid / 2);
-
-            @include media-query(tablet) {
-                padding-bottom: ($grid / 2);
-            }
-
-            @include media-query(wide) {
-                padding-bottom: ($grid / 2);
-            }
-        }
-
-        #{$root}__home-link {
-            @include gutter(0, 0, 0, 0, true);
-        }
-
-        #{$root}__nav-container {
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-
-        #{$root}__navigation {
-            @include gutter(0, 0, 0, 0.5);
-
-            @include media-query(laptop) {
-                border-left: 1px solid $color--border-light;
-            }
-
-        }
-
-        #{$root}__audience-navigation {
-            @include gutter(0, 0, 0, 0);
-            margin-right: ($grid / 2);
-            min-width: 24px; // Width of search icon for IE
-        }
-
-    }
-
-    .template__homepage & {
-        background-color: transparent;
-
-        #{$root}__nav-container {
-
-            @include media-query(tablet) {
-                animation: fadein 5s;
-            }
-
-        }
-
-    }
-
-    // sass-lint:disable force-element-nesting
-    .headroom--not-top .template__homepage & {
-        background-color: $color--white;
-    }
-    // sass-lint:enddisable
-
-    .header--light &,
-    .header--dark & {
-        background-color: transparent;
-    }
-
-    .headroom--top .template__about & {
-        background-color: transparent;
     }
 
     // Animations

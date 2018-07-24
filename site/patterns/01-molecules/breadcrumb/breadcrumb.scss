@@ -8,21 +8,4 @@
         display: flex;
     }
 
-    .template__listing & {
-        display: none;
-    }
-
-    .page-heading--centered & {
-
-        #{$root}__container {
-            justify-content: center;
-
-            @include media-query(laptop) {
-                justify-content: flex-start;
-            }
-
-        }
-
-    }
-
 }

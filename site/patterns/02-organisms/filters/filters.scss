@@ -62,15 +62,6 @@
             display: none;
         }
 
-        .template__homepage & {
-            display: none;
-
-            @include media-query(tablet) {
-                display: block;
-            }
-
-        }
-
     }
 
 }

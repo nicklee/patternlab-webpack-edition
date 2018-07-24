@@ -5,10 +5,6 @@
     align-items: center;
     color: $color--black;
 
-    .page__header--dark & {
-        color: $color--white;
-    }
-
     &__link {
         display: flex;
         text-decoration: none;
@@ -18,25 +14,9 @@
                     color $default-transition-speed ease 0s;
         // sass-lint:enddisable
 
-        .page__header--dark & {
-            color: $color--white;
-        }
-
-        .template__error & {
-            color: $color--black;
-        }
 
         &:hover {
             color: $color--link;
-
-            .page__header--dark & {
-                color: $color--primary;
-            }
-
-            .template__error & {
-                color: $color--white;
-            }
-
         }
 
     }
@@ -44,11 +24,6 @@
     &__divide {
         @include gutter(0, 0, 0, 0.15);
         color: $color--border;
-
-        .template__error & {
-            color: $color--black;
-        }
-
     }
 
     .breadcrumb & {

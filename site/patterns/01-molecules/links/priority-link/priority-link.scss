@@ -48,7 +48,7 @@
     }
 
     // Only shown on laptop + sizes
-    .app-header__navigation & {
+    .header__navigation & {
         @include gutter(0, 0.25, 0, 0.225);
         @include rem-font-size(17px);
         display: block;
@@ -76,7 +76,7 @@
             display: block;
 
             @include media-query(laptop) {
-                // Bottom gutter should match app-header__container top gutter
+                // Bottom gutter should match header__container top gutter
                 @include gutter(0, 0, 0.75, 0);
             }
 
@@ -88,7 +88,7 @@
 
     }
 
-    .app-header__audience-navigation & {
+    .header__audience-navigation & {
         @include gutter(0.25, 0.6, 0.25, 0);
         @include font-size(xs);
         color: $color--black;
@@ -110,11 +110,11 @@
 
     }
 
-    .app-header__navigation .priority-nav__menu__item:last-child & {
+    .header__navigation .priority-nav__menu__item:last-child & {
         padding-right: 0 !important;
     }
 
-    .app-header__navigation .priority-nav__menu__item:first-child & {
+    .header__navigation .priority-nav__menu__item:first-child & {
         padding-left: 0 !important;
     }
 
