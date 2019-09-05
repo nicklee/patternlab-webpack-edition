@@ -9,7 +9,6 @@ It is assumed the developers computer is running OSX or Linux. Depending on your
 
 * [Node.js](http://nodejs.org) (version 4.x.x)
 * [PHP](http://www.php.net/) (version 5.5+)
-* Optional: [Yarn](https://yarnpkg.com/en/docs/install)
 
 ## What's included
 
@@ -29,34 +28,13 @@ To start a prototype using this bootstrap;
 `git clone https://github.com/torchbox/design-in-browser-bootstrap.git new-project`.
 * **Name the project:** Open `package.json` and replace the `name` with your project name [following npm guidelines](http://browsenpm.org/package.json#name).
 * **Setup git**: Run `npm run git:init` in the root of your new project to remove existing git links with this repository and create a fresh project with the directory as is committed.
-* **Install dependencies** Run `yarn install` to run the install process. `npm install` will work too, see [section about yarn below](#using-yarn).
-
+* **Install dependencies** Run `npm install` to run the install process.
 
 ## Developing with it
 
-* To start the development environment `npm run lab` - to stop this process press `ctrl + c`.
+* To start the development environment `npm run start` - to stop this process press `ctrl + c`.
 * This will start Browsersync and open your default browser after the startup process is complete. You can change this configuation by modifying the `browsersync.config.js` file, documented here https://www.browsersync.io/docs/options.
 * Source files for developing your project are in `site` and the distribution folder for the compiled assets is `dist`. Any changes made to files in the `dist` directory will be overwritten.
-
-### Using yarn
-
-* Yarn is the recommended way to install and upgrade node modules. It's like npm but [handles dependencies better](http://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap#answer-40057535).
-* Install yarn itself: https://yarnpkg.com/en/docs/install
-* Install all packages from `package.json`: `yarn install`
-* Add new packages with yarn: `yarn add --dev package_name` (this will add it to `package.json` and `yarn.lock` too)
-* Upgrade packages: `yarn upgrade-interactive`
-* You can use `yarn` instead of `npm run` to run tooling scripts, for example `yarn lab` instead of `npm run lab`.
-
-
-## Deploying it
-
-### Deploy script
-
-You can take advantage of the nodejs package [dploy](https://github.com/LeanMeanFightingMachine/dploy) to upload the `/dist` directory. To do so you will need to;
-
- * Make a copy of `example.dploy.yaml` and name it `dploy.yaml`.
- * Modify the `host` `user` and `path.remote` variables.
- * Run `npm run deploy` to start the deployment process.
 
 ### Build scripts
 
@@ -74,45 +52,7 @@ To test production, minified and vendor prefixed assets you can use
 
 ## Troubleshooting
 
-### Installation
-If you see the following error you can resolve node permissions using these steps: https://github.com/npm/npm/wiki/Troubleshooting#permission-error
-
-```
-npm WARN package.json globalwitness@0.0.1 No repository field.
-npm ERR! Error: EACCES, mkdir '/Users/Dave/.npm/depd/1.0.0'
-npm ERR!  { [Error: EACCES, mkdir '/Users/Dave/.npm/depd/1.0.0']
-npm ERR!   errno: 3,
-npm ERR!   code: 'EACCES',
-npm ERR!   path: '/Users/Dave/.npm/depd/1.0.0',
-npm ERR!   parent: 'connect' }
-npm ERR!
-npm ERR! Please try running this command again as root/Administrator.
-
-```
-
 ## Technical Debt
 
  - 30 minute timeout from patternlab is hardcoded and within the vendor directory, a value has been modified in /patternlab/vendor/pattern-lab/core/src/PatternLab/Console/Commands/WatchCommand.php
  - Missing classes have been added to improve the rendering of titles on the file /patternlab/vendor/pattern-lab/styleguidekit-twig-default/views/partials/patternSectionSubtype.twig
-
-## License
-
-Copyright (c) 2016 Torchbox Ltd
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
