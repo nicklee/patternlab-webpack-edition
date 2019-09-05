@@ -1,55 +1,55 @@
 import Cookies from 'js-cookie';
 
 class CookieWarning {
+    static selector() {
+        return '[data-cookie-message]';
+    }
 
-    constructor( ) {
-        this.dismissButton =         document.querySelector('.js-cookie-dismiss');
-        this.messageContainer =      document.querySelector('.js-cookie-message');
-        this.cookieName =            'Project name-cookie';
-        this.cookieValue =           'agree to cookies';
-        this.cookieDuration =        365;
-        this.activeClass =           'active';
-        this.inactiveClass =         'inactive';
+    constructor(node) {
+        this.dismissButton = document.querySelector('[data-cookie-dismiss]');
+        this.messageContainer = node;
+        this.cookieName = 'client-cookie';
+        this.cookieValue = 'agree to cookies';
+        this.cookieDuration = 365;
+        this.activeClass = 'active';
+        this.inactiveClass = 'inactive';
 
         this.checkCookie();
         this.bindEvents();
     }
 
     checkCookie() {
-
-        if(!this.messageContainer) {
+        if (!this.messageContainer) {
             return;
         }
 
         // If cookie doesn't exists
-        if( !Cookies.get(this.cookieName) ){
-            this.messageContainer.classList.add( this.activeClass );
+        if (!Cookies.get(this.cookieName)) {
+            this.messageContainer.classList.add(this.activeClass);
         }
-
     }
 
     applyCookie(event) {
         // prevent default link action
         event.preventDefault();
         // Add classes
-        this.messageContainer.classList.remove( this.activeClass );
-        this.messageContainer.classList.add( this.inactiveClass );
+        this.messageContainer.classList.remove(this.activeClass);
+        this.messageContainer.classList.add(this.inactiveClass);
         // Set cookie
-        Cookies.set(this.cookieName, this.cookieValue, { expires: this.cookieDuration });
+        Cookies.set(this.cookieName, this.cookieValue, {
+            expires: this.cookieDuration,
+        });
     }
 
     bindEvents() {
-
         if (!this.dismissButton) {
             return;
         }
 
-        this.dismissButton.addEventListener( 'click', (event) => this.applyCookie(event) );
-
+        this.dismissButton.addEventListener('click', (event) =>
+            this.applyCookie(event),
+        );
     }
-
 }
 
-[].forEach.call(document.getElementsByClassName('js-cookie-message'), function(el) {
-    new CookieWarning(el);
-});
+export default CookieWarning;

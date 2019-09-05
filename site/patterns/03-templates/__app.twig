@@ -1,8 +1,10 @@
-<div class="app {% if template %}template__{{ template }}{% endif %} {% if bodyModifier %}{{ bodyModifier }}{% endif %}">
+<div class="app {% if template %}app__{{ template }}{% endif %} {% if bodyModifier %}{{ bodyModifier }}{% endif %}">
 
     <a class="app__skip" aria-label="Skip to content" href="#page-top">Skip to content</a>
 
     {% include "atoms-sprites" %}
+    
+    {% include "@atoms/progress-bar/progress-bar.twig" %}
 
     <header class="app__header" id="page-top">
         {% include "@organisms/header/header.twig" %}
