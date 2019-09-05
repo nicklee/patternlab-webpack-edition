@@ -15,9 +15,8 @@ It is assumed the developers computer is running OSX or Linux. Depending on your
 * [Patternlab-PHP](https://github.com/pattern-lab/edition-php-twig-standard): Currently the most complete and stable version of patternlab, and supports [twig](http://twig.sensiolabs.org/).
 * [SASS](http://sass-lang.com/) CSS with [auto-prefixing](https://github.com/postcss/autoprefixer).
 * [Browsersync](https://www.browsersync.io) for autoreloading.
-* [Rollup](https://rollupjs.org) and [Babel](https://babeljs.io) for ES2015 support with module loading.
+* [Babel](https://babeljs.io) for ES2015 support with module loading.
 * Consideration for images, currently copying the directory only. We encourage using SVG for icons and pre-optimised photograph assets.
-* An automated way to upload your site to a staging server using [dploy](https://github.com/LeanMeanFightingMachine/dploy).
 * [Build commands](#build-scripts) for generating testable or deployable assets only
 
 ## Installation
