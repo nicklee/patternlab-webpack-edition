@@ -95,7 +95,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-import-glob": "^2.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.10",
     "eslint": "^6.3.0",
     "eslint-loader": "^3.0.0",
     "mini-css-extract-plugin": "^0.8.0",
